@@ -1,0 +1,22 @@
+[
+  {
+    "filename": "swc-1.16.2.node",
+    "bytes": 26612480,
+    "sha256": "01053e9b9792e8c1c433ac7feeeecdb5e552fb92d58de6e35b084521eae6f04a"
+  },
+  {
+    "filename": "swc-1.16.2.node.search8.zst",
+    "bytes": 7698372,
+    "sha256": "b6c6fb8b31443bf196a9a6ab524e5492b3530227f830bc20195c5d7644a766d8"
+  },
+  {
+    "filename": "rspack-1.7.0.node",
+    "bytes": 40506208,
+    "sha256": "2d0320114bcacefe361be27c0e301d40201ab57bc61162e83dd3c0f1f611a955"
+  },
+  {
+    "filename": "rspack-1.7.0.node.search8.zst",
+    "bytes": 11133902,
+    "sha256": "2af46d42c5758ff6f277a15c011cc2cd71c170254c5a76edcef65a756df55195"
+  }
+]
