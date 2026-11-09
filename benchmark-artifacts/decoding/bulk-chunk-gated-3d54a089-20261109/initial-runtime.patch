@@ -1,0 +1,39 @@
+diff --git a/crates/swc_native_addon/src/format.rs b/crates/swc_native_addon/src/format.rs
+index c0e2f952f..16cbf2fa6 100644
+--- a/crates/swc_native_addon/src/format.rs
++++ b/crates/swc_native_addon/src/format.rs
+@@ -318,6 +318,34 @@ impl<'a> Payload<'a> {
+                 ));
+             }
+         }
++        // Ordinary native images fit in a bounded output buffer. Let zstd use
++        // that buffer as its history instead of allocating a separate streaming
++        // window and copying each block into a small staging buffer. Larger
++        // images retain streaming so memory never scales to the 2 GiB limit.
++        if self.header.raw_len <= 64 * 1024 * 1024 {
++            let mut decoder = zstd::bulk::Decompressor::new()
++                .map_err(|e| Error::io(ErrorKind::Compression, "initialize zstd decoder", e))?;
++            decoder
++                .set_parameter(zstd::zstd_safe::DParameter::WindowLogMax(window_log))
++                .map_err(|e| Error::io(ErrorKind::Compression, "limit zstd window", e))?;
++            let buffer = decoder
++                .decompress(self.compressed, self.header.raw_len as usize)
++                .map_err(|e| Error::io(ErrorKind::Compression, "decompress native addon", e))?;
++            if buffer.len() as u64 != self.header.raw_len {
++                return Err(Error::new(ErrorKind::Integrity, "decoded addon length mismatch"));
++            }
++            // Keep the streaming path's hash/write granularity while avoiding
++            // a second full-size zstd history allocation and block copies.
++            for chunk in buffer.chunks(hash.buffer_len(self.header.raw_len)) {
++                hash.update(chunk);
++                output
++                    .write_all(chunk)
++                    .map_err(|e| Error::io(ErrorKind::Cache, "write decoded addon", e))?;
++            }
++            hash.finish()?;
++            native_kind(output, self.header.raw_len)?;
++            return Ok(());
++        }
+         let mut decoder = zstd::stream::read::Decoder::with_buffer(self.compressed)
+             .map_err(|e| Error::io(ErrorKind::Compression, "initialize zstd decoder", e))?
+             .single_frame();
