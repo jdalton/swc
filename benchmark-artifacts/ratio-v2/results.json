@@ -1,0 +1,114 @@
+[
+  {
+    "name": "SWC",
+    "version": "1.16.2",
+    "raw_bytes": 26612480,
+    "sha256": "01053e9b9792e8c1c433ac7feeeecdb5e552fb92d58de6e35b084521eae6f04a",
+    "runs": [
+      {
+        "trial": 0,
+        "variant": "baseline",
+        "compressed_bytes": 8446098,
+        "pack_seconds": 7.947,
+        "decode_ms": 242.526,
+        "peak_process_bytes": 113164288
+      },
+      {
+        "trial": 0,
+        "variant": "candidate",
+        "compressed_bytes": 7714807,
+        "pack_seconds": 29.227,
+        "decode_ms": 268.179,
+        "peak_process_bytes": 201555968
+      },
+      {
+        "trial": 1,
+        "variant": "candidate",
+        "compressed_bytes": 7714807,
+        "pack_seconds": 31.336,
+        "decode_ms": 324.887,
+        "peak_process_bytes": 201064448
+      },
+      {
+        "trial": 1,
+        "variant": "baseline",
+        "compressed_bytes": 8446098,
+        "pack_seconds": 22.036,
+        "decode_ms": 374.873,
+        "peak_process_bytes": 112590848
+      },
+      {
+        "trial": 2,
+        "variant": "baseline",
+        "compressed_bytes": 8446098,
+        "pack_seconds": 17.135,
+        "decode_ms": 562.76,
+        "peak_process_bytes": 113164288
+      },
+      {
+        "trial": 2,
+        "variant": "candidate",
+        "compressed_bytes": 7714807,
+        "pack_seconds": 47.837,
+        "decode_ms": 345.473,
+        "peak_process_bytes": 201588736
+      }
+    ]
+  },
+  {
+    "name": "Rspack",
+    "version": "1.7.0",
+    "raw_bytes": 40506208,
+    "sha256": "2d0320114bcacefe361be27c0e301d40201ab57bc61162e83dd3c0f1f611a955",
+    "runs": [
+      {
+        "trial": 0,
+        "variant": "baseline",
+        "compressed_bytes": 12406049,
+        "pack_seconds": 19.404,
+        "decode_ms": 393.491,
+        "peak_process_bytes": 148881408
+      },
+      {
+        "trial": 0,
+        "variant": "candidate",
+        "compressed_bytes": 11182486,
+        "pack_seconds": 62.224,
+        "decode_ms": 583.916,
+        "peak_process_bytes": 255934464
+      },
+      {
+        "trial": 1,
+        "variant": "candidate",
+        "compressed_bytes": 11182486,
+        "pack_seconds": 62.569,
+        "decode_ms": 613.236,
+        "peak_process_bytes": 255934464
+      },
+      {
+        "trial": 1,
+        "variant": "baseline",
+        "compressed_bytes": 12406049,
+        "pack_seconds": 21.514,
+        "decode_ms": 447.179,
+        "peak_process_bytes": 148881408
+      },
+      {
+        "trial": 2,
+        "variant": "baseline",
+        "compressed_bytes": 12406049,
+        "pack_seconds": 20.84,
+        "decode_ms": 427.397,
+        "peak_process_bytes": 148881408
+      },
+      {
+        "trial": 2,
+        "variant": "candidate",
+        "compressed_bytes": 11182486,
+        "pack_seconds": 35.974,
+        "decode_ms": 236.21,
+        "peak_process_bytes": 255934464
+      }
+    ]
+  }
+]
