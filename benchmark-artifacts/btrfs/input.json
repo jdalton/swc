@@ -1,0 +1,7 @@
+{
+  "package": "@swc/core-linux-arm64-gnu",
+  "version": "1.16.2",
+  "bytes": 33313448,
+  "sha256": "c8c3f9ffdf3087bb8b6d032c63d30e25ff55305127e3de68d01dd11270fe960f",
+  "source": "https://registry.npmjs.org/@swc/core-linux-arm64-gnu/-/core-linux-arm64-gnu-1.16.2.tgz"
+}
