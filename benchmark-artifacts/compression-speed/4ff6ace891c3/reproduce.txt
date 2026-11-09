@@ -1,0 +1,20 @@
+Packing probe:
+cargo build --release --bin tune
+python3 repeat.py ./target/release/tune <swc.node> <rspack.node> memory21
+Use @swc/core-darwin-arm64 1.16.2 and @rspack/binding-darwin-arm64 1.7.0. The script checks exact raw input SHA-256. Frames are written beside those public input files; use a scratch directory. screen.py reproduces the initial HashLog22/21 screen; its sampled Rspack21 timing is not part of repeated results.
+
+SWC frame comparison:
+Build cargo build -p swc_native_addon --release --example compare_decoding in the SWC repository at 2ccb29d1a290658d58d35536f945f991324df93c (streaming decoder unchanged through the baseline 3d54a0896). Included compare_decoding.rs is that source. Run python3 frame-run.py <built-compare_decoding> <swc.node>, then python3 frame-analyze.py. It reads .search8.zst and .memory21.zst beside the input. Five alternating process pairs, 14 rounds/process, first 2 warmups excluded. Each timed region includes streaming decode with full runtime BLAKE3 into a fresh tempfile; no fsync. Independent SHA-512 verification is outside timing. Rspack does not need a frame comparison because its encoded frame is identical.
+
+Charts:
+python3 chart.py
+python3 size-chart.py
+Requires matplotlib. Both use decimal MB. Raw JSON retains exact measurements.
+
+Production validation:
+Use a canonical user-owned TMPDIR on macOS to avoid symlinked-path cache-root checks.
+cargo fmt --all -- --check
+cargo test -p swc_native_addon --release
+cargo clippy -p swc_native_addon --all-targets --release -- -D warnings
+cargo run -p swc_native_addon --release --example compare_compression -- <input.node> --candidate
+Run the last command once per input. Full workspace Clippy/core integration were not rerun in this focused pass; previous environmental failures remain disclosed.

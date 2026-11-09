@@ -1,0 +1,16 @@
+{
+  "source_base": "2ccb29d1a290658d58d35536f945f991324df93c",
+  "architecture": "aarch64",
+  "os": "ProductName:\t\tmacOS\nProductVersion:\t\t27.2\nBuildVersion:\t\t26B123\n",
+  "compiler": "rustc 1.96.0-nightly (f5eca4fcf 2026-04-09)\nbinary: rustc\ncommit-hash: f5eca4fcfa908d1e038afd19c6e746f075859130\ncommit-date: 2026-04-09\nhost: aarch64-apple-darwin\nrelease: 1.96.0-nightly\nLLVM version: 22.1.2\n",
+  "warmup_rounds": 2,
+  "measured_rounds": 12,
+  "process_pairs": 5,
+  "timed_region": "Payload::decode_into to fresh tempfile including full BLAKE3; no fsync; independent SHA512 outside timed region",
+  "decoder_binary_sha256": "8b919d0188c591a57bb7d594231c83412dae53f6d03f82129c5c664a14f24aa6",
+  "frame_variants": {
+    "search8": "HashLog23/SearchLog8",
+    "memory21": "HashLog21/SearchLog8"
+  },
+  "runtime_unchanged_through": "3d54a0896fa3ba5c4af023c3c259db277cca99ac"
+}

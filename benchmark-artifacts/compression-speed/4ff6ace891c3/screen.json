@@ -1,0 +1,42 @@
+[
+  {
+    "input": "SWC",
+    "trial": 0,
+    "variant": "memory22",
+    "bytes": 7698372,
+    "pack_seconds": 38.94512,
+    "cpu_seconds": 11.08,
+    "peak_process_bytes": 366395392,
+    "frame_sha256": "b6c6fb8b31443bf196a9a6ab524e5492b3530227f830bc20195c5d7644a766d8"
+  },
+  {
+    "input": "SWC",
+    "trial": 0,
+    "variant": "memory21",
+    "bytes": 7698217,
+    "pack_seconds": 29.408075,
+    "cpu_seconds": 11.47,
+    "peak_process_bytes": 358006784,
+    "frame_sha256": "24912f31f8de2ff1429d8b93525603ee0da4000ea9c46171617701d4706c32a5"
+  },
+  {
+    "input": "Rspack",
+    "trial": 0,
+    "variant": "memory22",
+    "bytes": 11133902,
+    "pack_seconds": 45.461896,
+    "cpu_seconds": 18.84,
+    "peak_process_bytes": 632520704,
+    "frame_sha256": "2af46d42c5758ff6f277a15c011cc2cd71c170254c5a76edcef65a756df55195"
+  },
+  {
+    "input": "Rspack",
+    "trial": 0,
+    "variant": "memory21",
+    "bytes": 11133902,
+    "pack_seconds": 89.818672,
+    "cpu_seconds": 20.34,
+    "peak_process_bytes": 628424704,
+    "frame_sha256": "2af46d42c5758ff6f277a15c011cc2cd71c170254c5a76edcef65a756df55195"
+  }
+]

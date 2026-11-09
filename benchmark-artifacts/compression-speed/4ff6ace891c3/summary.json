@@ -1,0 +1,128 @@
+{
+  "SWC": {
+    "search8": {
+      "bytes": {
+        "median": 7698372,
+        "min": 7698372,
+        "max": 7698372
+      },
+      "pack_seconds": {
+        "median": 18.504474,
+        "min": 18.084704,
+        "max": 21.688862
+      },
+      "cpu_seconds": {
+        "median": 10.13,
+        "min": 10.0,
+        "max": 10.27
+      },
+      "peak_process_bytes": {
+        "median": 383172608,
+        "min": 383156224,
+        "max": 383172608
+      }
+    },
+    "memory21": {
+      "bytes": {
+        "median": 7698217,
+        "min": 7698217,
+        "max": 7698217
+      },
+      "pack_seconds": {
+        "median": 19.932795,
+        "min": 19.543763,
+        "max": 19.968681
+      },
+      "cpu_seconds": {
+        "median": 11.040000000000001,
+        "min": 10.95,
+        "max": 11.07
+      },
+      "peak_process_bytes": {
+        "median": 358006784,
+        "min": 358006784,
+        "max": 358006784
+      }
+    },
+    "pairs": [
+      {
+        "trial": 0,
+        "rss_decrease_bytes": 25149440,
+        "rss_decrease_percent": 6.563756093389205
+      },
+      {
+        "trial": 1,
+        "rss_decrease_bytes": 25165824,
+        "rss_decrease_percent": 6.567751314833026
+      },
+      {
+        "trial": 2,
+        "rss_decrease_bytes": 25165824,
+        "rss_decrease_percent": 6.567751314833026
+      }
+    ]
+  },
+  "Rspack": {
+    "search8": {
+      "bytes": {
+        "median": 11133902,
+        "min": 11133902,
+        "max": 11133902
+      },
+      "pack_seconds": {
+        "median": 51.113571,
+        "min": 42.064865,
+        "max": 68.355001
+      },
+      "cpu_seconds": {
+        "median": 18.04,
+        "min": 17.81,
+        "max": 18.290000000000003
+      },
+      "peak_process_bytes": {
+        "median": 699613184,
+        "min": 655474688,
+        "max": 699613184
+      }
+    },
+    "memory21": {
+      "bytes": {
+        "median": 11133902,
+        "min": 11133902,
+        "max": 11133902
+      },
+      "pack_seconds": {
+        "median": 47.918992,
+        "min": 43.983197,
+        "max": 67.698632
+      },
+      "cpu_seconds": {
+        "median": 19.599999999999998,
+        "min": 19.31,
+        "max": 19.61
+      },
+      "peak_process_bytes": {
+        "median": 629866496,
+        "min": 629047296,
+        "max": 674447360
+      }
+    },
+    "pairs": [
+      {
+        "trial": 0,
+        "rss_decrease_bytes": 26427392,
+        "rss_decrease_percent": 4.031794435973701
+      },
+      {
+        "trial": 1,
+        "rss_decrease_bytes": 25165824,
+        "rss_decrease_percent": 3.5971054542048186
+      },
+      {
+        "trial": 2,
+        "rss_decrease_bytes": 69746688,
+        "rss_decrease_percent": 9.969321561555933
+      }
+    ]
+  }
+}

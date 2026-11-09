@@ -1,0 +1,15 @@
+Memory pass: size first, then decoding, memory, compression speed
+
+Research: zstd 1.5.7 zstd.h documents the initial probe table as 4 * 2^hashLog, and says larger tables primarily improve speed for strategies stronger than dFast. zstd_opt.c uses the hash table to enter its binary match tree. The existing minimum-match-3 table is separate and unchanged. A three-second Rspack Hash21 screen profile placed 187/275 top-of-stack samples in binary-tree match search and 80 in optimal parsing. This locates work; it does not prove a speed change.
+
+Plan: screen HashLog22 and21 with SearchLog8, btultra2, LDM, chain table and window unchanged. Require nonlarger output on both public Darwin ARM64 inputs, inspect frame hashes, then repeat the viable candidate against the current Hash23 control. No additional LDM sweep was needed.
+
+Selection: Hash22 preserves both current frames exactly. Hash21 produces a slightly smaller SWC frame (0.0020% smaller) and the exact same Rspack frame. Hash21 is preferred under the requested size-first ordering and uses less lookup-table memory: 33.55→8.39 MB, a 25.17 MB deterministic reduction. All completed probe runs decoded to exactly the original input.
+
+Confirmation: three alternating fresh-process pairs per input. SWC peak process RSS 383.17→358.01 MB, down 6.57%. Its paired decreases are about 25.17 MB. Rspack pairs (MB): 655.47→629.05; 699.61→674.45; 699.61→629.87. Resident memory varied with unrelated host work. The unusually large last decrease is not attributed to the table change; the chart shows all paired observations. These are compression-plus-roundtrip processes retaining the compressor context, not runtime or production-packer memory measurements.
+
+CPU tradeoff: median whole-process CPU 10.13→11.04s for SWC (+8.98%) and 18.04→19.60s for Rspack (+8.65%). It includes reading, compression, output writing, decompression and equality verification. Elapsed compression time is recorded separately; contention makes it noisy. No compression-speed gain is claimed.
+
+Decoding check: Rspack frames are identical, so packing introduces no change in its decode work. SWC comparison used one unchanged streaming-decoder binary, five alternating fresh-process pairs, fourteen rounds per process with the first two excluded. Median process wall time 130.72→117.92ms, but the candidate was faster in only two of five pairs. CPU 66.51→65.54ms. No consistent decoding timing change is established. Every round independently verified the full decoded content.
+
+Implementation: HashLog23→21 only. Format, targets, size/window bounds, all integrity checks, dependencies, strategy and decoder remain unchanged. Existing large-input and integrity fixtures validate the parameter path; no redundant constant-only test is added. Existing swc_core patch changeset continues to describe bounded search tables and LDM.

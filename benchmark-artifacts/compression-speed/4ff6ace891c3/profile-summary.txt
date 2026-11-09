@@ -1,0 +1,1 @@
+macOS sample of Rspack memory21 screening process, 3 seconds at 10ms intervals. 275 samples: 187 in ZSTD_btGetAllMatches_noDict_3,80 in ZSTD_compressBlock_opt2. Match-search and optimal parsing dominate. The sampled screen is not used as a repeated performance observation; repeat.py uses unsampled fresh processes.

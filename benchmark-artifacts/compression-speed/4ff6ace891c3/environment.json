@@ -1,0 +1,44 @@
+{
+  "baseline_commit": "3d54a0896fa3ba5c4af023c3c259db277cca99ac",
+  "implementation_commit": "4ff6ace891c37a97f3eff06280d2e728c81d8fcb",
+  "cpu": "Apple M1 Max",
+  "os": "macOS 27.2",
+  "arch": "arm64",
+  "zstd_crate": "0.14.3",
+  "zstd": "1.5.7",
+  "compiler": "rustc 1.96.0-nightly (f5eca4fcf 2026-04-09)\nbinary: rustc\ncommit-hash: f5eca4fcfa908d1e038afd19c6e746f075859130\ncommit-date: 2026-04-09\nhost: aarch64-apple-darwin\nrelease: 1.96.0-nightly\nLLVM version: 22.1.2\n",
+  "control": {
+    "variant": "search8",
+    "level": 22,
+    "ldm": true,
+    "window": "ceil(log2(raw size)), capped at 26",
+    "hash_log": 23,
+    "search_log": 8,
+    "strategy": "btultra2"
+  },
+  "candidate": {
+    "same_as_control": true,
+    "variant": "memory21",
+    "hash_log": 21
+  },
+  "probe_table_bytes": {
+    "control": 33554432,
+    "candidate": 8388608,
+    "reduction": 25165824
+  },
+  "method": "3 alternating fresh-process pairs/input; CPU and peak RSS from /usr/bin/time -lp; exact decoded-byte equality after each compression",
+  "memory_scope": "Peak compression-plus-roundtrip process RSS; compressor context remains alive. Not runtime memory or direct production-packer RSS.",
+  "host_caveat": "Unrelated rustc activity and host memory residency noise were observed. Extra Rspack RSS reductions beyond 25.17 MB are not attributed to the table change. No CPU or decode-speed gain claimed.",
+  "actual_packer_payload_bytes": {
+    "SWC": 7698217,
+    "Rspack": 11133902
+  },
+  "validation": {
+    "native_tests_passed": 39,
+    "native_tests_ignored": 3,
+    "format": "cargo fmt --all -- --check exited 0",
+    "clippy": "cargo clippy -p swc_native_addon --all-targets --release -- -D warnings exited 0; existing workspace-profile and MSRV-metadata warnings remain",
+    "other_platforms": "not validated in this pass",
+    "workspace_clippy_and_core_integration": "not rerun; prior host-disk/NAPI failures remain disclosed"
+  }
+}
