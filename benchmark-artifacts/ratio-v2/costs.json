@@ -1,0 +1,78 @@
+[
+  {
+    "name": "SWC",
+    "sha256": "01053e9b9792e8c1c433ac7feeeecdb5e552fb92d58de6e35b084521eae6f04a",
+    "baseline": {
+      "pack_seconds": {
+        "median": 17.135,
+        "min": 7.947,
+        "max": 22.036
+      },
+      "decode_ms": {
+        "median": 374.873,
+        "min": 242.526,
+        "max": 562.76
+      },
+      "peak_process_bytes": {
+        "median": 113164288,
+        "min": 112590848,
+        "max": 113164288
+      }
+    },
+    "candidate": {
+      "pack_seconds": {
+        "median": 31.336,
+        "min": 29.227,
+        "max": 47.837
+      },
+      "decode_ms": {
+        "median": 324.887,
+        "min": 268.179,
+        "max": 345.473
+      },
+      "peak_process_bytes": {
+        "median": 201555968,
+        "min": 201064448,
+        "max": 201588736
+      }
+    }
+  },
+  {
+    "name": "Rspack",
+    "sha256": "2d0320114bcacefe361be27c0e301d40201ab57bc61162e83dd3c0f1f611a955",
+    "baseline": {
+      "pack_seconds": {
+        "median": 20.84,
+        "min": 19.404,
+        "max": 21.514
+      },
+      "decode_ms": {
+        "median": 427.397,
+        "min": 393.491,
+        "max": 447.179
+      },
+      "peak_process_bytes": {
+        "median": 148881408,
+        "min": 148881408,
+        "max": 148881408
+      }
+    },
+    "candidate": {
+      "pack_seconds": {
+        "median": 62.224,
+        "min": 35.974,
+        "max": 62.569
+      },
+      "decode_ms": {
+        "median": 583.916,
+        "min": 236.21,
+        "max": 613.236
+      },
+      "peak_process_bytes": {
+        "median": 255934464,
+        "min": 255934464,
+        "max": 255934464
+      }
+    }
+  }
+]
