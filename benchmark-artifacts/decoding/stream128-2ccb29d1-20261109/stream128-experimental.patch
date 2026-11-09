@@ -1,0 +1,18 @@
+diff --git a/crates/swc_native_addon/src/format.rs b/crates/swc_native_addon/src/format.rs
+index 6e14864b6..426f753ae 100644
+--- a/crates/swc_native_addon/src/format.rs
++++ b/crates/swc_native_addon/src/format.rs
+@@ -328,7 +328,12 @@ impl<'a> Payload<'a> {
+             .window_log_max(window_log)
+             .map_err(|e| Error::io(ErrorKind::Compression, "limit zstd window", e))?;
+         let mut count = 0_u64;
+-        let mut buffer = vec![0; hash.buffer_len(self.header.raw_len)];
++        // A full zstd output block avoids splitting each block across reads and
++        // staging-file writes. Keep larger parallel hashing batches intact.
++        let buffer_len = hash.buffer_len(self.header.raw_len).max(
++            zstd::stream::read::Decoder::<&[u8]>::recommended_output_size(),
++        );
++        let mut buffer = vec![0; buffer_len];
+         loop {
+             let read = decoder
+                 .read(&mut buffer)
