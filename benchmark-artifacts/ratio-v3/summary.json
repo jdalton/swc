@@ -1,0 +1,100 @@
+[
+  {
+    "name": "SWC",
+    "version": "1.16.2",
+    "original_bytes": 8446098,
+    "full": {
+      "bytes": {
+        "median": 7698648,
+        "min": 7698648,
+        "max": 7698648
+      },
+      "pack_seconds": {
+        "median": 24.19952,
+        "min": 19.015398,
+        "max": 30.316908
+      },
+      "cpu_seconds": {
+        "median": 10.23,
+        "min": 10.209999999999999,
+        "max": 10.76
+      },
+      "peak_process_bytes": {
+        "median": 483835904,
+        "min": 483835904,
+        "max": 483835904
+      }
+    },
+    "selected": {
+      "bytes": {
+        "median": 7698505,
+        "min": 7698505,
+        "max": 7698505
+      },
+      "pack_seconds": {
+        "median": 25.721889,
+        "min": 25.375522,
+        "max": 26.132499
+      },
+      "cpu_seconds": {
+        "median": 10.6,
+        "min": 10.459999999999999,
+        "max": 10.709999999999999
+      },
+      "peak_process_bytes": {
+        "median": 383172608,
+        "min": 383172608,
+        "max": 383172608
+      }
+    }
+  },
+  {
+    "name": "Rspack",
+    "version": "1.7.0",
+    "original_bytes": 12406049,
+    "full": {
+      "bytes": {
+        "median": 11134005,
+        "min": 11134005,
+        "max": 11134005
+      },
+      "pack_seconds": {
+        "median": 40.093918,
+        "min": 34.84829,
+        "max": 43.338267
+      },
+      "cpu_seconds": {
+        "median": 17.37,
+        "min": 17.23,
+        "max": 17.61
+      },
+      "peak_process_bytes": {
+        "median": 800276480,
+        "min": 757809152,
+        "max": 800276480
+      }
+    },
+    "selected": {
+      "bytes": {
+        "median": 11134385,
+        "min": 11134385,
+        "max": 11134385
+      },
+      "pack_seconds": {
+        "median": 33.577439,
+        "min": 31.462561,
+        "max": 43.623811
+      },
+      "cpu_seconds": {
+        "median": 17.34,
+        "min": 17.23,
+        "max": 17.6
+      },
+      "peak_process_bytes": {
+        "median": 699613184,
+        "min": 699613184,
+        "max": 699613184
+      }
+    }
+  }
+]
