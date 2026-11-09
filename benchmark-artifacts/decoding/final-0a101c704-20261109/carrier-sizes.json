@@ -1,0 +1,18 @@
+[
+  {
+    "input": "SWC",
+    "frame_bytes": 7698436,
+    "frame_sha256": "2efe59a5f7340b01e7f5f4b1bb332aeb8142112812333fae448f91399974b261",
+    "carrier_bytes": 8246288,
+    "carrier_sha256": "acf5706ac867c8a72f9b4714840991b5855b3c8ba13039480d950d3da4319f72",
+    "embedded_payload_matches": true
+  },
+  {
+    "input": "Rspack",
+    "frame_bytes": 11133901,
+    "frame_sha256": "1865073a5f0c75cc094e50869cafe6fc86b684e3c137df5f182e82d9b8cb0024",
+    "carrier_bytes": 11697296,
+    "carrier_sha256": "c07861983a0e628dfbdd7c74dfbafac8ef138418e8c23b805fedac7554e3c358",
+    "embedded_payload_matches": true
+  }
+]

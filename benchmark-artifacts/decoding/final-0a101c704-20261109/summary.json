@@ -1,0 +1,198 @@
+{
+  "SWC": {
+    "original16_stream": {
+      "process_medians": [
+        {
+          "trial": 0,
+          "wall_ms": 49.7765,
+          "cpu_ms": 47.91
+        },
+        {
+          "trial": 1,
+          "wall_ms": 51.103,
+          "cpu_ms": 48.025999999999996
+        },
+        {
+          "trial": 2,
+          "wall_ms": 50.5125,
+          "cpu_ms": 48.3735
+        },
+        {
+          "trial": 3,
+          "wall_ms": 50.876000000000005,
+          "cpu_ms": 48.894999999999996
+        },
+        {
+          "trial": 4,
+          "wall_ms": 52.0435,
+          "cpu_ms": 49.962999999999994
+        }
+      ],
+      "wall_ms": 50.876000000000005,
+      "cpu_ms": 48.3735,
+      "peak_process_bytes": 45989888
+    },
+    "hash21_bulk": {
+      "process_medians": [
+        {
+          "trial": 0,
+          "wall_ms": 48.9645,
+          "cpu_ms": 47.727000000000004
+        },
+        {
+          "trial": 1,
+          "wall_ms": 47.798,
+          "cpu_ms": 47.084999999999994
+        },
+        {
+          "trial": 2,
+          "wall_ms": 48.7475,
+          "cpu_ms": 47.681
+        },
+        {
+          "trial": 3,
+          "wall_ms": 48.3365,
+          "cpu_ms": 47.24
+        },
+        {
+          "trial": 4,
+          "wall_ms": 48.1685,
+          "cpu_ms": 47.211
+        }
+      ],
+      "wall_ms": 48.3365,
+      "cpu_ms": 47.24,
+      "peak_process_bytes": 44318720
+    },
+    "hash20_batch256": {
+      "process_medians": [
+        {
+          "trial": 0,
+          "wall_ms": 45.007000000000005,
+          "cpu_ms": 44.028
+        },
+        {
+          "trial": 1,
+          "wall_ms": 44.9315,
+          "cpu_ms": 44.0895
+        },
+        {
+          "trial": 2,
+          "wall_ms": 44.706,
+          "cpu_ms": 43.9735
+        },
+        {
+          "trial": 3,
+          "wall_ms": 44.926,
+          "cpu_ms": 43.996
+        },
+        {
+          "trial": 4,
+          "wall_ms": 44.8055,
+          "cpu_ms": 43.686
+        }
+      ],
+      "wall_ms": 44.926,
+      "cpu_ms": 43.996,
+      "peak_process_bytes": 44400640
+    }
+  },
+  "Rspack": {
+    "original16_stream": {
+      "process_medians": [
+        {
+          "trial": 0,
+          "wall_ms": 76.70349999999999,
+          "cpu_ms": 73.51050000000001
+        },
+        {
+          "trial": 1,
+          "wall_ms": 76.5055,
+          "cpu_ms": 73.37950000000001
+        },
+        {
+          "trial": 2,
+          "wall_ms": 77.015,
+          "cpu_ms": 74.17750000000001
+        },
+        {
+          "trial": 3,
+          "wall_ms": 75.5125,
+          "cpu_ms": 72.648
+        },
+        {
+          "trial": 4,
+          "wall_ms": 75.39599999999999,
+          "cpu_ms": 72.36850000000001
+        }
+      ],
+      "wall_ms": 76.5055,
+      "cpu_ms": 73.37950000000001,
+      "peak_process_bytes": 72204288
+    },
+    "hash21_bulk": {
+      "process_medians": [
+        {
+          "trial": 0,
+          "wall_ms": 73.833,
+          "cpu_ms": 71.888
+        },
+        {
+          "trial": 1,
+          "wall_ms": 74.338,
+          "cpu_ms": 72.7525
+        },
+        {
+          "trial": 2,
+          "wall_ms": 75.2535,
+          "cpu_ms": 73.47800000000001
+        },
+        {
+          "trial": 3,
+          "wall_ms": 75.5435,
+          "cpu_ms": 73.3175
+        },
+        {
+          "trial": 4,
+          "wall_ms": 73.832,
+          "cpu_ms": 72.0795
+        }
+      ],
+      "wall_ms": 74.338,
+      "cpu_ms": 72.7525,
+      "peak_process_bytes": 65159168
+    },
+    "hash20_batch256": {
+      "process_medians": [
+        {
+          "trial": 0,
+          "wall_ms": 68.401,
+          "cpu_ms": 66.61699999999999
+        },
+        {
+          "trial": 1,
+          "wall_ms": 68.2575,
+          "cpu_ms": 67.2485
+        },
+        {
+          "trial": 2,
+          "wall_ms": 68.8385,
+          "cpu_ms": 67.1695
+        },
+        {
+          "trial": 3,
+          "wall_ms": 69.07650000000001,
+          "cpu_ms": 67.569
+        },
+        {
+          "trial": 4,
+          "wall_ms": 67.782,
+          "cpu_ms": 66.2
+        }
+      ],
+      "wall_ms": 68.401,
+      "cpu_ms": 67.1695,
+      "peak_process_bytes": 65159168
+    }
+  }
+}

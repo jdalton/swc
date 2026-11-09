@@ -1,0 +1,22 @@
+[
+  {
+    "input": "SWC",
+    "payload_bytes": 8446098,
+    "payload_sha256": "9f0e566442f805e52cabaa5d828e4587be48f125859257424086fbf92fe16ffc",
+    "carrier_bytes": 8989328,
+    "carrier_sha256": "05343a80f07301fe7cba3774bfbfc33253a049c80a43abd38508b8d4aa4c171d",
+    "embedded_payload_matches": true,
+    "frame_sha256": "35ef62a3a862566cf14917538d9d8145f4f6733abd3b9c3d4aa0e5fbb42c3037",
+    "frame_path": "/tmp/swc-decoding-quiet-final/SWC-original16.zst"
+  },
+  {
+    "input": "Rspack",
+    "payload_bytes": 12406049,
+    "payload_sha256": "f22a713fbd027c559c8ffe931a4d547ebf80bc6ea08e5b098a4c82642f818ecb",
+    "carrier_bytes": 12985232,
+    "carrier_sha256": "f250a09126fd6853fa437cf05927e73ea83b2592c42627fc0d0d6a2c202b6317",
+    "embedded_payload_matches": true,
+    "frame_sha256": "9386e2ea3e190a2fa0c153ad5a60b4fdbf7fcb5604b67819d6983b44583805f0",
+    "frame_path": "/tmp/swc-decoding-quiet-final/Rspack-original16.zst"
+  }
+]

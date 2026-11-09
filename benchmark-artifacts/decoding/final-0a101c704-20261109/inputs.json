@@ -1,0 +1,12 @@
+[
+  {
+    "input": "SWC",
+    "raw_bytes": 26612480,
+    "raw_sha256": "01053e9b9792e8c1c433ac7feeeecdb5e552fb92d58de6e35b084521eae6f04a"
+  },
+  {
+    "input": "Rspack",
+    "raw_bytes": 40506208,
+    "raw_sha256": "2d0320114bcacefe361be27c0e301d40201ab57bc61162e83dd3c0f1f611a955"
+  }
+]

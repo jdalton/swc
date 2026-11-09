@@ -1,0 +1,108 @@
+{
+  "SWC": {
+    "memory21": {
+      "bytes": {
+        "median": 7698217,
+        "min": 7698217,
+        "max": 7698217
+      },
+      "pack_seconds": {
+        "median": 8.546715,
+        "min": 8.272571,
+        "max": 8.692627
+      },
+      "cpu_seconds": {
+        "median": 8.56,
+        "min": 8.280000000000001,
+        "max": 8.690000000000001
+      },
+      "peak_process_bytes": {
+        "median": 358006784,
+        "min": 357990400,
+        "max": 358006784
+      },
+      "frame_sha256": "24912f31f8de2ff1429d8b93525603ee0da4000ea9c46171617701d4706c32a5"
+    },
+    "hash20": {
+      "bytes": {
+        "median": 7698436,
+        "min": 7698436,
+        "max": 7698436
+      },
+      "pack_seconds": {
+        "median": 9.356588,
+        "min": 9.051323,
+        "max": 9.414239
+      },
+      "cpu_seconds": {
+        "median": 9.33,
+        "min": 9.07,
+        "max": 9.38
+      },
+      "peak_process_bytes": {
+        "median": 353812480,
+        "min": 353812480,
+        "max": 353812480
+      },
+      "frame_sha256": "2efe59a5f7340b01e7f5f4b1bb332aeb8142112812333fae448f91399974b261"
+    },
+    "cpu_change_percent": 8.99532710280373,
+    "peak_reduction_bytes": 4194304,
+    "original_level16_bytes": 8446098,
+    "original_payload_saved_bytes": 747662,
+    "raw_sha256": "01053e9b9792e8c1c433ac7feeeecdb5e552fb92d58de6e35b084521eae6f04a"
+  },
+  "Rspack": {
+    "memory21": {
+      "bytes": {
+        "median": 11133902,
+        "min": 11133902,
+        "max": 11133902
+      },
+      "pack_seconds": {
+        "median": 15.334046,
+        "min": 15.212294,
+        "max": 15.615707
+      },
+      "cpu_seconds": {
+        "median": 15.35,
+        "min": 15.229999999999999,
+        "max": 15.389999999999999
+      },
+      "peak_process_bytes": {
+        "median": 674447360,
+        "min": 674447360,
+        "max": 674447360
+      },
+      "frame_sha256": "2af46d42c5758ff6f277a15c011cc2cd71c170254c5a76edcef65a756df55195"
+    },
+    "hash20": {
+      "bytes": {
+        "median": 11133901,
+        "min": 11133901,
+        "max": 11133901
+      },
+      "pack_seconds": {
+        "median": 16.082051,
+        "min": 16.016599,
+        "max": 16.252626
+      },
+      "cpu_seconds": {
+        "median": 16.12,
+        "min": 16.05,
+        "max": 16.26
+      },
+      "peak_process_bytes": {
+        "median": 670253056,
+        "min": 670253056,
+        "max": 670253056
+      },
+      "frame_sha256": "1865073a5f0c75cc094e50869cafe6fc86b684e3c137df5f182e82d9b8cb0024"
+    },
+    "cpu_change_percent": 5.016286644951151,
+    "peak_reduction_bytes": 4194304,
+    "original_level16_bytes": 12406049,
+    "original_payload_saved_bytes": 1272148,
+    "raw_sha256": "2d0320114bcacefe361be27c0e301d40201ab57bc61162e83dd3c0f1f611a955"
+  }
+}

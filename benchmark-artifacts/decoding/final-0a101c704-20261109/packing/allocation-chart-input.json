@@ -1,0 +1,11 @@
+{
+  "unit": "bytes",
+  "lookup_table": {
+    "hash23_reference": 33554432,
+    "hash21_previous": 8388608,
+    "hash20_candidate": 4194304
+  },
+  "total_reduction_vs_hash23": 29360128,
+  "incremental_reduction_vs_hash21": 4194304,
+  "scope": "Compression lookup-table allocation, not whole process or runtime memory"
+}

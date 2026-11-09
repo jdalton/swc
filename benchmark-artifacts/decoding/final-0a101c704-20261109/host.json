@@ -1,0 +1,72 @@
+[
+  {
+    "input": "SWC",
+    "trial": 0,
+    "utc": "2026-11-09T20:38:11.945971+00:00",
+    "cpu_idle_percent": 80.92,
+    "raw": "Processes: 801 total, 14 running, 787 sleeping, 6319 threads \n2026/11/09 15:38:10\nLoad Avg: 5.38, 5.97, 27.98 \nCPU usage: 17.45% user, 11.16% sys, 71.37% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 592404 total, 6037M resident, 243M private, 1867M shared.\nPhysMem: 30G used (3569M wired, 16G compressor), 1360M unused.\nVM: 413T vsize, 57G framework vsize, 77161612(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53695557/55G in, 27902252/17G out.\nDisks: 1885690885/23T read, 77904261/3216G written.\n\n\nProcesses: 801 total, 4 running, 797 sleeping, 6319 threads \n2026/11/09 15:38:11\nLoad Avg: 5.38, 5.97, 27.98 \nCPU usage: 15.55% user, 3.52% sys, 80.92% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 0 total, 0B resident, 243M private, 1867M shared.\nPhysMem: 30G used (3569M wired, 16G compressor), 1358M unused.\nVM: 413T vsize, 57G framework vsize, 77161612(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53695589/55G in, 27902274/17G out.\nDisks: 1885690900/23T read, 77904262/3216G written.\n\n\n"
+  },
+  {
+    "input": "SWC",
+    "trial": 1,
+    "utc": "2026-11-09T20:38:18.386330+00:00",
+    "cpu_idle_percent": 80.82,
+    "raw": "Processes: 798 total, 4 running, 794 sleeping, 6288 threads \n2026/11/09 15:38:17\nLoad Avg: 5.11, 5.90, 27.83 \nCPU usage: 16.54% user, 10.91% sys, 72.53% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 604991 total, 6164M resident, 241M private, 1875M shared.\nPhysMem: 30G used (3569M wired, 16G compressor), 1124M unused.\nVM: 413T vsize, 57G framework vsize, 77161620(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53695798/55G in, 27902417/17G out.\nDisks: 1885691060/23T read, 77910534/3217G written.\n\n\nProcesses: 797 total, 5 running, 792 sleeping, 6299 threads \n2026/11/09 15:38:18\nLoad Avg: 5.11, 5.90, 27.83 \nCPU usage: 15.93% user, 3.24% sys, 80.82% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 0 total, 0B resident, 241M private, 1875M shared.\nPhysMem: 30G used (3568M wired, 16G compressor), 1138M unused.\nVM: 413T vsize, 57G framework vsize, 77161620(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53695805/55G in, 27902421/17G out.\nDisks: 1885691121/23T read, 77910534/3217G written.\n\n\n"
+  },
+  {
+    "input": "SWC",
+    "trial": 2,
+    "utc": "2026-11-09T20:38:24.883473+00:00",
+    "cpu_idle_percent": 81.84,
+    "raw": "Processes: 797 total, 3 running, 794 sleeping, 6252 threads \n2026/11/09 15:38:23\nLoad Avg: 4.94, 5.85, 27.68 \nCPU usage: 16.46% user, 10.50% sys, 73.2% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 604700 total, 6140M resident, 239M private, 1852M shared.\nPhysMem: 30G used (3571M wired, 16G compressor), 1153M unused.\nVM: 413T vsize, 57G framework vsize, 77161628(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53695863/55G in, 27902462/17G out.\nDisks: 1885691395/23T read, 77920915/3218G written.\n\n\nProcesses: 797 total, 3 running, 794 sleeping, 6240 threads \n2026/11/09 15:38:24\nLoad Avg: 4.94, 5.85, 27.68 \nCPU usage: 15.35% user, 2.80% sys, 81.84% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 0 total, 0B resident, 239M private, 1852M shared.\nPhysMem: 30G used (3568M wired, 16G compressor), 1163M unused.\nVM: 413T vsize, 57G framework vsize, 77161628(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53695876/55G in, 27902470/17G out.\nDisks: 1885691410/23T read, 77920916/3218G written.\n\n\n"
+  },
+  {
+    "input": "SWC",
+    "trial": 3,
+    "utc": "2026-11-09T20:38:31.135372+00:00",
+    "cpu_idle_percent": 80.78,
+    "raw": "Processes: 797 total, 3 running, 794 sleeping, 6236 threads \n2026/11/09 15:38:30\nLoad Avg: 5.11, 5.87, 27.56 \nCPU usage: 16.37% user, 10.86% sys, 72.75% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 604669 total, 6141M resident, 239M private, 1856M shared.\nPhysMem: 30G used (3569M wired, 16G compressor), 1168M unused.\nVM: 413T vsize, 57G framework vsize, 77161628(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53695960/55G in, 27902535/17G out.\nDisks: 1885691486/23T read, 77927925/3219G written.\n\n\nProcesses: 797 total, 4 running, 793 sleeping, 6238 threads \n2026/11/09 15:38:31\nLoad Avg: 4.94, 5.83, 27.41 \nCPU usage: 15.88% user, 3.32% sys, 80.78% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 0 total, 0B resident, 239M private, 1856M shared.\nPhysMem: 30G used (3569M wired, 16G compressor), 1167M unused.\nVM: 413T vsize, 57G framework vsize, 77161628(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53695983/55G in, 27902559/17G out.\nDisks: 1885691503/23T read, 77928359/3219G written.\n\n\n"
+  },
+  {
+    "input": "SWC",
+    "trial": 4,
+    "utc": "2026-11-09T20:38:37.393048+00:00",
+    "cpu_idle_percent": 78.88,
+    "raw": "Processes: 797 total, 3 running, 794 sleeping, 6239 threads \n2026/11/09 15:38:36\nLoad Avg: 4.70, 5.76, 27.27 \nCPU usage: 17.30% user, 11.88% sys, 70.80% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 604676 total, 6144M resident, 239M private, 1857M shared.\nPhysMem: 30G used (3568M wired, 16G compressor), 1161M unused.\nVM: 413T vsize, 57G framework vsize, 77161636(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53696699/55G in, 27902739/17G out.\nDisks: 1885691587/23T read, 77935291/3220G written.\n\n\nProcesses: 797 total, 3 running, 794 sleeping, 6235 threads \n2026/11/09 15:38:37\nLoad Avg: 4.70, 5.76, 27.27 \nCPU usage: 16.60% user, 4.51% sys, 78.88% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 0 total, 0B resident, 239M private, 1857M shared.\nPhysMem: 30G used (3568M wired, 16G compressor), 1161M unused.\nVM: 413T vsize, 57G framework vsize, 77161636(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53696715/55G in, 27902747/17G out.\nDisks: 1885691602/23T read, 77935296/3220G written.\n\n\n"
+  },
+  {
+    "input": "Rspack",
+    "trial": 0,
+    "utc": "2026-11-09T20:38:43.719661+00:00",
+    "cpu_idle_percent": 78.1,
+    "raw": "Processes: 797 total, 3 running, 794 sleeping, 6233 threads \n2026/11/09 15:38:42\nLoad Avg: 4.89, 5.78, 27.15 \nCPU usage: 17.13% user, 11.53% sys, 71.32% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 604666 total, 6147M resident, 239M private, 1857M shared.\nPhysMem: 30G used (3569M wired, 16G compressor), 1157M unused.\nVM: 413T vsize, 57G framework vsize, 77161656(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53697034/55G in, 27903141/17G out.\nDisks: 1885691741/23T read, 77941796/3222G written.\n\n\nProcesses: 797 total, 4 running, 793 sleeping, 6235 threads \n2026/11/09 15:38:43\nLoad Avg: 4.89, 5.78, 27.15 \nCPU usage: 17.29% user, 4.59% sys, 78.10% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 0 total, 0B resident, 239M private, 1857M shared.\nPhysMem: 30G used (3569M wired, 16G compressor), 1176M unused.\nVM: 413T vsize, 57G framework vsize, 77161656(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53697050/55G in, 27903153/17G out.\nDisks: 1885691756/23T read, 77942722/3222G written.\n\n\n"
+  },
+  {
+    "input": "Rspack",
+    "trial": 1,
+    "utc": "2026-11-09T20:38:52.363703+00:00",
+    "cpu_idle_percent": 77.2,
+    "raw": "Processes: 797 total, 4 running, 793 sleeping, 6223 threads \n2026/11/09 15:38:51\nLoad Avg: 4.82, 5.74, 26.88 \nCPU usage: 19.58% user, 13.17% sys, 67.24% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 604631 total, 6136M resident, 239M private, 1856M shared.\nPhysMem: 30G used (3588M wired, 16G compressor), 1150M unused.\nVM: 413T vsize, 57G framework vsize, 77161656(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53697264/55G in, 27903253/17G out.\nDisks: 1885691944/23T read, 77953164/3223G written.\n\n\nProcesses: 797 total, 3 running, 794 sleeping, 6217 threads \n2026/11/09 15:38:52\nLoad Avg: 4.82, 5.74, 26.88 \nCPU usage: 18.37% user, 4.59% sys, 77.2% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 0 total, 0B resident, 239M private, 1856M shared.\nPhysMem: 30G used (3588M wired, 16G compressor), 1148M unused.\nVM: 413T vsize, 57G framework vsize, 77161656(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53697286/55G in, 27903264/17G out.\nDisks: 1885691959/23T read, 77953164/3223G written.\n\n\n"
+  },
+  {
+    "input": "Rspack",
+    "trial": 2,
+    "utc": "2026-11-09T20:39:01.075001+00:00",
+    "cpu_idle_percent": 71.49,
+    "raw": "Processes: 798 total, 5 running, 793 sleeping, 6314 threads \n2026/11/09 15:38:59\nLoad Avg: 4.67, 5.69, 26.74 \nCPU usage: 22.24% user, 12.58% sys, 65.17% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 604950 total, 6184M resident, 241M private, 1896M shared.\nPhysMem: 30G used (3618M wired, 16G compressor), 1059M unused.\nVM: 413T vsize, 57G framework vsize, 77161656(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53697522/55G in, 27903439/17G out.\nDisks: 1885692075/23T read, 77962816/3225G written.\n\n\nProcesses: 799 total, 5 running, 794 sleeping, 6324 threads \n2026/11/09 15:39:01\nLoad Avg: 4.70, 5.68, 26.61 \nCPU usage: 22.34% user, 6.16% sys, 71.49% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 45 total, 1088K resident, 241M private, 1896M shared.\nPhysMem: 30G used (3603M wired, 16G compressor), 1065M unused.\nVM: 414T vsize, 57G framework vsize, 77161656(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53697810/55G in, 27903698/17G out.\nDisks: 1885692092/23T read, 77962816/3225G written.\n\n\n"
+  },
+  {
+    "input": "Rspack",
+    "trial": 3,
+    "utc": "2026-11-09T20:39:09.849655+00:00",
+    "cpu_idle_percent": 72.49,
+    "raw": "Processes: 799 total, 5 running, 794 sleeping, 6376 threads \n2026/11/09 15:39:08\nLoad Avg: 4.56, 5.64, 26.48 \nCPU usage: 21.63% user, 12.23% sys, 66.13% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 592336 total, 6111M resident, 241M private, 2009M shared.\nPhysMem: 30G used (3566M wired, 16G compressor), 1032M unused.\nVM: 412T vsize, 57G framework vsize, 77161664(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53698252/55G in, 27904134/17G out.\nDisks: 1885692283/23T read, 77972600/3226G written.\n\n\nProcesses: 799 total, 7 running, 792 sleeping, 6368 threads \n2026/11/09 15:39:09\nLoad Avg: 4.56, 5.64, 26.48 \nCPU usage: 21.10% user, 6.40% sys, 72.49% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 0 total, 0B resident, 241M private, 2009M shared.\nPhysMem: 30G used (3566M wired, 16G compressor), 1031M unused.\nVM: 412T vsize, 57G framework vsize, 77161664(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53698378/55G in, 27904199/17G out.\nDisks: 1885692298/23T read, 77973785/3226G written.\n\n\n"
+  },
+  {
+    "input": "Rspack",
+    "trial": 4,
+    "utc": "2026-11-09T20:39:18.607904+00:00",
+    "cpu_idle_percent": 77.65,
+    "raw": "Processes: 801 total, 3 running, 798 sleeping, 6298 threads \n2026/11/09 15:39:17\nLoad Avg: 4.47, 5.58, 26.21 \nCPU usage: 20.87% user, 21.4% sys, 58.8% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 605043 total, 6233M resident, 242M private, 1999M shared.\nPhysMem: 30G used (3593M wired, 16G compressor), 817M unused.\nVM: 415T vsize, 57G framework vsize, 77161664(0) swapins, 90400509(0) swapouts.\nNetworks: packets: 53698759/55G in, 27904498/17G out.\nDisks: 1885692412/23T read, 77984959/3228G written.\n\n\nProcesses: 800 total, 3 running, 797 sleeping, 6272 threads \n2026/11/09 15:39:18\nLoad Avg: 4.47, 5.58, 26.21 \nCPU usage: 17.11% user, 5.22% sys, 77.65% idle \nSharedLibs: 584M resident, 124M data, 100M linkedit.\nMemRegions: 0 total, 0B resident, 242M private, 1999M shared.\nPhysMem: 30G used (3590M wired, 16G compressor), 825M unused.\nVM: 414T vsize, 57G framework vsize, 77161668(4) swapins, 90400509(0) swapouts.\nNetworks: packets: 53698799/55G in, 27904537/17G out.\nDisks: 1885692429/23T read, 77984959/3228G written.\n\n\n"
+  }
+]

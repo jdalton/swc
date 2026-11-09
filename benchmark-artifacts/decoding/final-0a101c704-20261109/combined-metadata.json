@@ -1,0 +1,13 @@
+{
+  "source_commit": "0a101c7041509ce3290f2cb8dba659c4c1ae03d1",
+  "final_variant": "hash20_batch256",
+  "original_variant": "original16_stream",
+  "incremental_baseline": "5a1bada2b033855391be73809220f48193d10b2f",
+  "frame_parameters": {
+    "level": 22,
+    "ldm": true,
+    "HashLog": 20,
+    "SearchLog": 8,
+    "WindowLog": "ceil(log2(raw length)), capped at26"
+  }
+}

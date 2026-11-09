@@ -1,0 +1,389 @@
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /Users/jdalton/projects/swc-native-decode-pass/bindings/binding_es_ast_viewer/Cargo.toml
+workspace: /Users/jdalton/projects/swc-native-decode-pass/Cargo.toml
+warning: profile package spec `icu_locid` in profile `release` did not match any packages
+warning: profile package spec `icu_locid_transform` in profile `release` did not match any packages
+   Compiling swc_native_addon v0.1.0 (/Users/jdalton/projects/swc-native-decode-pass/crates/swc_native_addon)
+    Finished `release` profile [optimized] target(s) in 11.59s
+     Running unittests src/lib.rs (/tmp/swc-decode-pass-target/release/deps/swc_native_addon-33b822ff063d7041)
+
+running 3 tests
+test platform::unix::macos_tests::recognizes_noexec_mount_flags ... ok
+test replacement::supported::tests::rejects_carrier_without_embedded_header ... ok
+test replacement::supported::tests::finds_embedded_header_across_read_boundaries ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cache.rs (/tmp/swc-decode-pass-target/release/deps/cache-298d0d1ad5670a7c)
+
+running 19 tests
+test cache_root_ignores_permissive_umask_worker ... ok
+test cache_security::materialization_worker ... ok
+test cache_worker ... ok
+test cache_security::strict_root_worker ... ok
+test cache_security::opt_out_root_worker ... ok
+test cache_configuration_is_explicit ... ok
+test custom_root_without_default_cache_worker ... ok
+test cache_root_ignores_permissive_umask ... ok
+test unix_cache_fallback::unix_cache_worker ... ok
+test cache_security::unsafe_roots_require_an_exact_security_opt_out ... ok
+test rejects_symlinks_hardlinks_and_unsafe_directories ... ok
+test custom_root_does_not_require_default_cache ... ok
+test verifies_hits_and_recovers_corruption ... ok
+test custom_root_failure_falls_back_to_default ... ok
+test persistent_cache_keeps_at_most_three_inactive_images ... ok
+test cache_security::security_opt_out_preserves_cache_modes_and_entry_validation ... ok
+test temporary_files_are_unique_and_removed_after_loading ... ok
+test concurrent_processes_publish_only_complete_files ... ok
+test unix_cache_fallback::unix_cache_fixtures ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.97s
+
+     Running tests/cleanup.rs (/tmp/swc-decode-pass-target/release/deps/cleanup-c5ad84581cc21cf4)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cleanup_policy.rs (/tmp/swc-decode-pass-target/release/deps/cleanup_policy-921d7e5a0b977fba)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/format.rs (/tmp/swc-decode-pass-target/release/deps/format-e4af239d82c48403)
+
+running 9 tests
+test rejects_decoder_size_and_window_abuse ... ok
+test rejects_hashed_non_native_payloads_and_checks_pe_signature ... ok
+test rejects_payload_target_mismatch ... ok
+test rejects_zstd_frame_classes ... ok
+test rejects_every_header_and_length_class ... ok
+test real_stripped_fixture_roundtrip ... ok
+test rejects_digest_mismatch_and_compressed_corruption ... ok
+test decoder_roundtrips_full_history_and_legacy_window_fixtures ... ok
+test large_payload_respects_decoder_window_and_integrity ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.94s
+
+     Running tests/integrity.rs (/tmp/swc-decode-pass-target/release/deps/integrity-32384c3c5300a5ae)
+
+running 4 tests
+test runtime_metadata_rejects_truncation_header_changes_and_digest_corruption ... ok
+test runtime_integrity_is_required_after_custom_cache_fallback ... ok
+test runtime_integrity_preserves_sha512_identity_and_verifies_every_byte ... ok
+test runtime_integrity_matches_blake3_across_parallel_batch_boundaries ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.18s
+
+     Running tests/linux_user_namespace.rs (/tmp/swc-decode-pass-target/release/deps/linux_user_namespace-1e98c7aa0ad171fb)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/ntfs.rs (/tmp/swc-decode-pass-target/release/deps/ntfs-8cd377310cc893f8)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/platform.rs (/tmp/swc-decode-pass-target/release/deps/platform-cf04dd5defd8728f)
+
+running 8 tests
+test apfs_self_replacement ... ignored, requires SWC_TEST_VOLUME on writable APFS
+test btrfs_self_replacement ... ignored, requires SWC_TEST_VOLUME on writable btrfs
+test ntfs_compression ... ignored, requires a Windows host and writable NTFS
+test replacement_accepts_files_without_macos_acls ... ok
+test replacement_metadata_preserves_permissions_and_user_attributes ... ok
+test replacement_skips_explicit_macos_acls ... ok
+test replacement_staging_detects_inherited_macos_acls ... ok
+test unsupported_filesystem_keeps_carrier ... ok
+
+test result: ok. 5 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests/windows_cache.rs (/tmp/swc-decode-pass-target/release/deps/windows_cache-6865dc6943873f90)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests swc_native_addon
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /Users/jdalton/projects/swc-native-decode-pass/bindings/binding_es_ast_viewer/Cargo.toml
+workspace: /Users/jdalton/projects/swc-native-decode-pass/Cargo.toml
+warning: profile package spec `icu_locid` in profile `release` did not match any packages
+warning: profile package spec `icu_locid_transform` in profile `release` did not match any packages
+warning: the MSRV in `clippy.toml` and `Cargo.toml` differ; using `1.73.0` from `clippy.toml`
+
+warning: `swc_native_addon` (build script) generated 1 warning
+    Checking swc_native_addon v0.1.0 (/Users/jdalton/projects/swc-native-decode-pass/crates/swc_native_addon)
+warning: `swc_native_addon` (lib) generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (lib test) generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "ntfs") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "linux_user_namespace") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "cleanup") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "windows_cache") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "cleanup_policy") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "platform") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "integrity") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (example "compare_decoding") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "format") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (example "compare_compression") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "cache") generated 1 warning (1 duplicate)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.60s
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /Users/jdalton/projects/swc-native-decode-pass/bindings/binding_es_ast_viewer/Cargo.toml
+workspace: /Users/jdalton/projects/swc-native-decode-pass/Cargo.toml
+warning: profile package spec `icu_locid` in profile `release` did not match any packages
+warning: profile package spec `icu_locid_transform` in profile `release` did not match any packages
+   Compiling swc_native_addon v0.1.0 (/Users/jdalton/projects/swc-native-decode-pass/crates/swc_native_addon)
+    Finished `release` profile [optimized] target(s) in 3.73s
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /Users/jdalton/projects/swc-native-decode-pass/bindings/binding_es_ast_viewer/Cargo.toml
+workspace: /Users/jdalton/projects/swc-native-decode-pass/Cargo.toml
+warning: profile package spec `icu_locid` in profile `release` did not match any packages
+warning: profile package spec `icu_locid_transform` in profile `release` did not match any packages
+   Compiling swc_native_addon v0.1.0 (/Users/jdalton/projects/swc-native-decode-pass/crates/swc_native_addon)
+   Compiling binding_native_addon v0.1.0 (/Users/jdalton/projects/swc-native-decode-pass/bindings/binding_native_addon)
+    Finished `release` profile [optimized] target(s) in 2.53s
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /Users/jdalton/projects/swc-native-decode-pass/bindings/binding_es_ast_viewer/Cargo.toml
+workspace: /Users/jdalton/projects/swc-native-decode-pass/Cargo.toml
+warning: profile package spec `icu_locid` in profile `release` did not match any packages
+warning: profile package spec `icu_locid_transform` in profile `release` did not match any packages
+   Compiling binding_native_addon v0.1.0 (/Users/jdalton/projects/swc-native-decode-pass/bindings/binding_native_addon)
+    Finished `release` profile [optimized] target(s) in 2.70s
+SWC 0 original16_stream done
+SWC 0 hash21_bulk done
+SWC 0 hash20_batch256 done
+SWC 1 hash21_bulk done
+SWC 1 hash20_batch256 done
+SWC 1 original16_stream done
+SWC 2 hash20_batch256 done
+SWC 2 original16_stream done
+SWC 2 hash21_bulk done
+SWC 3 hash20_batch256 done
+SWC 3 hash21_bulk done
+SWC 3 original16_stream done
+SWC 4 hash21_bulk done
+SWC 4 original16_stream done
+SWC 4 hash20_batch256 done
+Rspack 0 original16_stream done
+Rspack 0 hash21_bulk done
+Rspack 0 hash20_batch256 done
+Rspack 1 hash21_bulk done
+Rspack 1 hash20_batch256 done
+Rspack 1 original16_stream done
+Rspack 2 hash20_batch256 done
+Rspack 2 original16_stream done
+Rspack 2 hash21_bulk done
+Rspack 3 hash20_batch256 done
+Rspack 3 hash21_bulk done
+Rspack 3 original16_stream done
+Rspack 4 hash21_bulk done
+Rspack 4 original16_stream done
+Rspack 4 hash20_batch256 done
+{
+  "SWC": {
+    "original16_stream": {
+      "process_medians": [
+        {
+          "trial": 0,
+          "wall_ms": 49.7765,
+          "cpu_ms": 47.91
+        },
+        {
+          "trial": 1,
+          "wall_ms": 51.103,
+          "cpu_ms": 48.025999999999996
+        },
+        {
+          "trial": 2,
+          "wall_ms": 50.5125,
+          "cpu_ms": 48.3735
+        },
+        {
+          "trial": 3,
+          "wall_ms": 50.876000000000005,
+          "cpu_ms": 48.894999999999996
+        },
+        {
+          "trial": 4,
+          "wall_ms": 52.0435,
+          "cpu_ms": 49.962999999999994
+        }
+      ],
+      "wall_ms": 50.876000000000005,
+      "cpu_ms": 48.3735,
+      "peak_process_bytes": 45989888
+    },
+    "hash21_bulk": {
+      "process_medians": [
+        {
+          "trial": 0,
+          "wall_ms": 48.9645,
+          "cpu_ms": 47.727000000000004
+        },
+        {
+          "trial": 1,
+          "wall_ms": 47.798,
+          "cpu_ms": 47.084999999999994
+        },
+        {
+          "trial": 2,
+          "wall_ms": 48.7475,
+          "cpu_ms": 47.681
+        },
+        {
+          "trial": 3,
+          "wall_ms": 48.3365,
+          "cpu_ms": 47.24
+        },
+        {
+          "trial": 4,
+          "wall_ms": 48.1685,
+          "cpu_ms": 47.211
+        }
+      ],
+      "wall_ms": 48.3365,
+      "cpu_ms": 47.24,
+      "peak_process_bytes": 44318720
+    },
+    "hash20_batch256": {
+      "process_medians": [
+        {
+          "trial": 0,
+          "wall_ms": 45.007000000000005,
+          "cpu_ms": 44.028
+        },
+        {
+          "trial": 1,
+          "wall_ms": 44.9315,
+          "cpu_ms": 44.0895
+        },
+        {
+          "trial": 2,
+          "wall_ms": 44.706,
+          "cpu_ms": 43.9735
+        },
+        {
+          "trial": 3,
+          "wall_ms": 44.926,
+          "cpu_ms": 43.996
+        },
+        {
+          "trial": 4,
+          "wall_ms": 44.8055,
+          "cpu_ms": 43.686
+        }
+      ],
+      "wall_ms": 44.926,
+      "cpu_ms": 43.996,
+      "peak_process_bytes": 44400640
+    }
+  },
+  "Rspack": {
+    "original16_stream": {
+      "process_medians": [
+        {
+          "trial": 0,
+          "wall_ms": 76.70349999999999,
+          "cpu_ms": 73.51050000000001
+        },
+        {
+          "trial": 1,
+          "wall_ms": 76.5055,
+          "cpu_ms": 73.37950000000001
+        },
+        {
+          "trial": 2,
+          "wall_ms": 77.015,
+          "cpu_ms": 74.17750000000001
+        },
+        {
+          "trial": 3,
+          "wall_ms": 75.5125,
+          "cpu_ms": 72.648
+        },
+        {
+          "trial": 4,
+          "wall_ms": 75.39599999999999,
+          "cpu_ms": 72.36850000000001
+        }
+      ],
+      "wall_ms": 76.5055,
+      "cpu_ms": 73.37950000000001,
+      "peak_process_bytes": 72204288
+    },
+    "hash21_bulk": {
+      "process_medians": [
+        {
+          "trial": 0,
+          "wall_ms": 73.833,
+          "cpu_ms": 71.888
+        },
+        {
+          "trial": 1,
+          "wall_ms": 74.338,
+          "cpu_ms": 72.7525
+        },
+        {
+          "trial": 2,
+          "wall_ms": 75.2535,
+          "cpu_ms": 73.47800000000001
+        },
+        {
+          "trial": 3,
+          "wall_ms": 75.5435,
+          "cpu_ms": 73.3175
+        },
+        {
+          "trial": 4,
+          "wall_ms": 73.832,
+          "cpu_ms": 72.0795
+        }
+      ],
+      "wall_ms": 74.338,
+      "cpu_ms": 72.7525,
+      "peak_process_bytes": 65159168
+    },
+    "hash20_batch256": {
+      "process_medians": [
+        {
+          "trial": 0,
+          "wall_ms": 68.401,
+          "cpu_ms": 66.61699999999999
+        },
+        {
+          "trial": 1,
+          "wall_ms": 68.2575,
+          "cpu_ms": 67.2485
+        },
+        {
+          "trial": 2,
+          "wall_ms": 68.8385,
+          "cpu_ms": 67.1695
+        },
+        {
+          "trial": 3,
+          "wall_ms": 69.07650000000001,
+          "cpu_ms": 67.569
+        },
+        {
+          "trial": 4,
+          "wall_ms": 67.782,
+          "cpu_ms": 66.2
+        }
+      ],
+      "wall_ms": 68.401,
+      "cpu_ms": 67.1695,
+      "peak_process_bytes": 65159168
+    }
+  }
+}

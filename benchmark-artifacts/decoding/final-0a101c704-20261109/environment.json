@@ -1,0 +1,26 @@
+{
+  "source_commit": "0a101c7041509ce3290f2cb8dba659c4c1ae03d1",
+  "architecture": "aarch64",
+  "os": "ProductName:\t\tmacOS\nProductVersion:\t\t27.2\nBuildVersion:\t\t26B123\n",
+  "compiler": "rustc 1.96.0-nightly (f5eca4fcf 2026-04-09)\nbinary: rustc\ncommit-hash: f5eca4fcfa908d1e038afd19c6e746f075859130\ncommit-date: 2026-04-09\nhost: aarch64-apple-darwin\nrelease: 1.96.0-nightly\nLLVM version: 22.1.2\n",
+  "processes_per_variant_per_input": 5,
+  "warmup_rounds": 2,
+  "measured_rounds": 12,
+  "variants": {
+    "original16_stream": {
+      "source_commit": "4ff6ace891c37a97f3eff06280d2e728c81d8fcb",
+      "bytes": 452064,
+      "sha256": "8b919d0188c591a57bb7d594231c83412dae53f6d03f82129c5c664a14f24aa6"
+    },
+    "hash21_bulk": {
+      "source_commit": "5a1bada2b033855391be73809220f48193d10b2f",
+      "bytes": 452064,
+      "sha256": "c627c8adf306517ad1cba4037bcb60b9cfe4d007cbbdd5e8c9b5d93d5e25c18b"
+    },
+    "hash20_batch256": {
+      "source_commit": "0a101c7041509ce3290f2cb8dba659c4c1ae03d1",
+      "bytes": 452064,
+      "sha256": "dffea7522ae876c2faf449f9feb003fdc96283d11b4b4e5d783d80f67ae4f2dd"
+    }
+  }
+}
