@@ -1,0 +1,8 @@
+{
+  "cpu": "Apple M1 Max",
+  "os": "macOS 27.2",
+  "arch": "arm64",
+  "candidate_commit": "b15c1988c",
+  "method": "3 isolated processes per variant/input, alternating order; /usr/bin/time -l peak resident set; exact decoded bytes verified",
+  "notes": "SHA-512 decoder path, not runtime BLAKE3; noisy host timings; no speedup claim"
+}
