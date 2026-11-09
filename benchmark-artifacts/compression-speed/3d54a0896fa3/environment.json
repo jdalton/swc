@@ -1,0 +1,26 @@
+{
+  "cpu": "Apple M1 Max",
+  "os": "macOS 27.2",
+  "arch": "arm64",
+  "zstd_crate": "0.14.3",
+  "zstd": "1.5.7",
+  "implementation_commit": "3d54a0896fa3ba5c4af023c3c259db277cca99ac",
+  "control": {
+    "level": 22,
+    "long_distance_matching": true,
+    "window": "ceil(log2(input size)), capped at 26"
+  },
+  "candidate": {
+    "same_as_control": true,
+    "hash_log": 23,
+    "search_log": 8
+  },
+  "method": "Size-first screening: exact byte equality after every completed compression. Raw records retain single-run CPU, elapsed time, RSS; no speed claim. Compact repeats stopped once disqualified by size.",
+  "memory_scope": "Complete compression plus round-trip verification process, with compressor context retained during verification. This is not runtime memory or a direct production-packer RSS measurement.",
+  "limitations": "Single screening run per candidate/input; compact repetitions stopped after size regression. Whole-process CPU and peak RSS include roundtrip. Host contention affects wall time.",
+  "experiment": "Compression speed screening; candidates must not increase payload size",
+  "actual_packer_validation": {
+    "SWC": 7698372,
+    "Rspack": 11133902
+  }
+}

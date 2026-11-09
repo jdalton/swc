@@ -1,0 +1,9 @@
+Compression: cargo build --release --bin tune
+python3 search8.py ./target/release/tune <swc.node> <rspack.node>
+To generate prior comparison frames: ./target/release/tune <swc.node> selected ; repeat for rspack.
+Input SHA-256 is enforced by search8.py; use the versions in environment.json.
+
+Frame decoding: in the SWC repository at 2ccb29d1a290658d58d35536f945f991324df93c, build cargo build -p swc_native_addon --release --example compare_decoding. The source is also included here. Then run python3 frame-run.py <path-to-built-compare_decoding> <swc.node> <rspack.node>. It consumes the .selected.zst and .search8.zst files beside each raw input. Fourteen rounds/process, first two warmups excluded; five alternating process pairs/input. Timed region includes decode and verified BLAKE3 writes to fresh tempfile, no fsync; independent SHA-512 verification outside timing. frame-results.json holds every round. Run python3 frame-analyze.py to recompute frame-summary.json.
+
+Charts: python3 chart.py ; python3 size-chart.py (requires matplotlib).
+Production validation: TMPDIR must be a canonical user-owned directory on macOS because the cache rejects symlinked roots. cargo fmt --all -- --check; cargo test -p swc_native_addon --release; cargo clippy -p swc_native_addon --all-targets --release -- -D warnings; cargo run -p swc_native_addon --release --example compare_compression -- <input.node> --candidate.

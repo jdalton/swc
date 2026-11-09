@@ -1,0 +1,42 @@
+[
+  {
+    "input": "SWC",
+    "trial": 0,
+    "variant": "selected",
+    "bytes": 7698505,
+    "pack_seconds": 50.208616,
+    "cpu_seconds": 10.530000000000001,
+    "peak_process_bytes": 353239040,
+    "frame_sha256": "3e6a256fbda05eee0f51adec1837908ec0cd90327ef7a61ba2cd50e21236f2aa"
+  },
+  {
+    "input": "SWC",
+    "trial": 0,
+    "variant": "compact",
+    "bytes": 7698922,
+    "pack_seconds": 43.000638,
+    "cpu_seconds": 10.51,
+    "peak_process_bytes": 248430592,
+    "frame_sha256": "c3a05a9610398b762d26132e2416dff0a6345411c2a35f67201da2b92ed16b46"
+  },
+  {
+    "input": "SWC",
+    "trial": 1,
+    "variant": "compact",
+    "bytes": 7698922,
+    "pack_seconds": 39.010247,
+    "cpu_seconds": 10.43,
+    "peak_process_bytes": 248299520,
+    "frame_sha256": "c3a05a9610398b762d26132e2416dff0a6345411c2a35f67201da2b92ed16b46"
+  },
+  {
+    "input": "SWC",
+    "trial": 1,
+    "variant": "selected",
+    "bytes": 7698505,
+    "pack_seconds": 33.044809,
+    "cpu_seconds": 10.620000000000001,
+    "peak_process_bytes": 348651520,
+    "frame_sha256": "3e6a256fbda05eee0f51adec1837908ec0cd90327ef7a61ba2cd50e21236f2aa"
+  }
+]

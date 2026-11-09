@@ -1,0 +1,22 @@
+[
+  {
+    "input": "SWC",
+    "trial": 0,
+    "variant": "search8",
+    "bytes": 7698372,
+    "pack_seconds": 26.259742,
+    "cpu_seconds": 10.62,
+    "peak_process_bytes": 383172608,
+    "frame_sha256": "b6c6fb8b31443bf196a9a6ab524e5492b3530227f830bc20195c5d7644a766d8"
+  },
+  {
+    "input": "Rspack",
+    "trial": 0,
+    "variant": "search8",
+    "bytes": 11133902,
+    "pack_seconds": 56.394707,
+    "cpu_seconds": 18.01,
+    "peak_process_bytes": 650067968,
+    "frame_sha256": "2af46d42c5758ff6f277a15c011cc2cd71c170254c5a76edcef65a756df55195"
+  }
+]

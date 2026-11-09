@@ -1,0 +1,201 @@
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /Users/jdalton/projects/swc-native-speed-pass/bindings/binding_es_ast_viewer/Cargo.toml
+workspace: /Users/jdalton/projects/swc-native-speed-pass/Cargo.toml
+warning: profile package spec `icu_locid` in profile `release` did not match any packages
+warning: profile package spec `icu_locid_transform` in profile `release` did not match any packages
+    Finished `release` profile [optimized] target(s) in 0.28s
+     Running unittests src/lib.rs (/tmp/swc-speed-pass-target/release/deps/swc_native_addon-33b822ff063d7041)
+
+running 3 tests
+test platform::unix::macos_tests::recognizes_noexec_mount_flags ... ok
+test replacement::supported::tests::finds_embedded_header_across_read_boundaries ... ok
+test replacement::supported::tests::rejects_carrier_without_embedded_header ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cache.rs (/tmp/swc-speed-pass-target/release/deps/cache-298d0d1ad5670a7c)
+
+running 19 tests
+test cache_configuration_is_explicit ... ok
+test cache_root_ignores_permissive_umask_worker ... ok
+test cache_security::materialization_worker ... ok
+test cache_security::opt_out_root_worker ... ok
+test cache_security::strict_root_worker ... ok
+test cache_worker ... ok
+test custom_root_without_default_cache_worker ... ok
+test cache_root_ignores_permissive_umask ... ok
+test unix_cache_fallback::unix_cache_worker ... ok
+test cache_security::unsafe_roots_require_an_exact_security_opt_out ... ok
+test custom_root_does_not_require_default_cache ... ok
+test cache_security::security_opt_out_preserves_cache_modes_and_entry_validation ... ok
+test rejects_symlinks_hardlinks_and_unsafe_directories ... ok
+test custom_root_failure_falls_back_to_default ... ok
+test persistent_cache_keeps_at_most_three_inactive_images ... ok
+test verifies_hits_and_recovers_corruption ... ok
+test concurrent_processes_publish_only_complete_files ... ok
+test temporary_files_are_unique_and_removed_after_loading ... ok
+test unix_cache_fallback::unix_cache_fixtures ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.43s
+
+     Running tests/cleanup.rs (/tmp/swc-speed-pass-target/release/deps/cleanup-c5ad84581cc21cf4)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cleanup_policy.rs (/tmp/swc-speed-pass-target/release/deps/cleanup_policy-921d7e5a0b977fba)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/format.rs (/tmp/swc-speed-pass-target/release/deps/format-e4af239d82c48403)
+
+running 8 tests
+test rejects_decoder_size_and_window_abuse ... ok
+test rejects_hashed_non_native_payloads_and_checks_pe_signature ... ok
+test rejects_zstd_frame_classes ... ok
+test rejects_payload_target_mismatch ... ok
+test rejects_every_header_and_length_class ... ok
+test real_stripped_fixture_roundtrip ... ok
+test rejects_digest_mismatch_and_compressed_corruption ... ok
+test large_payload_respects_decoder_window_and_integrity ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.70s
+
+     Running tests/integrity.rs (/tmp/swc-speed-pass-target/release/deps/integrity-32384c3c5300a5ae)
+
+running 4 tests
+test runtime_metadata_rejects_truncation_header_changes_and_digest_corruption ... ok
+test runtime_integrity_is_required_after_custom_cache_fallback ... ok
+test runtime_integrity_preserves_sha512_identity_and_verifies_every_byte ... ok
+test runtime_integrity_matches_blake3_across_parallel_batch_boundaries ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.20s
+
+     Running tests/linux_user_namespace.rs (/tmp/swc-speed-pass-target/release/deps/linux_user_namespace-1e98c7aa0ad171fb)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/ntfs.rs (/tmp/swc-speed-pass-target/release/deps/ntfs-8cd377310cc893f8)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/platform.rs (/tmp/swc-speed-pass-target/release/deps/platform-cf04dd5defd8728f)
+
+running 8 tests
+test apfs_self_replacement ... ignored, requires SWC_TEST_VOLUME on writable APFS
+test btrfs_self_replacement ... ignored, requires SWC_TEST_VOLUME on writable btrfs
+test ntfs_compression ... ignored, requires a Windows host and writable NTFS
+test replacement_accepts_files_without_macos_acls ... ok
+test replacement_metadata_preserves_permissions_and_user_attributes ... ok
+test replacement_skips_explicit_macos_acls ... ok
+test replacement_staging_detects_inherited_macos_acls ... ok
+test unsupported_filesystem_keeps_carrier ... ok
+
+test result: ok. 5 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.32s
+
+     Running tests/windows_cache.rs (/tmp/swc-speed-pass-target/release/deps/windows_cache-6865dc6943873f90)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests swc_native_addon
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /Users/jdalton/projects/swc-native-speed-pass/bindings/binding_es_ast_viewer/Cargo.toml
+workspace: /Users/jdalton/projects/swc-native-speed-pass/Cargo.toml
+warning: profile package spec `icu_locid` in profile `release` did not match any packages
+warning: profile package spec `icu_locid_transform` in profile `release` did not match any packages
+    Checking cfg-if v1.0.4
+    Checking once_cell v1.21.3
+    Checking bitflags v2.10.0
+    Checking arrayref v0.3.8
+    Checking fastrand v2.1.1
+    Checking libc v0.2.189
+    Checking typenum v1.17.0
+    Checking constant_time_eq v0.3.1
+   Compiling swc_native_addon v0.1.0 (/Users/jdalton/projects/swc-native-speed-pass/crates/swc_native_addon)
+    Checking zstd-sys v2.1.2+zstd.1.5.7
+    Checking pin-project-lite v0.2.14
+    Checking arrayvec v0.7.8
+warning: the MSRV in `clippy.toml` and `Cargo.toml` differ; using `1.73.0` from `clippy.toml`
+
+    Checking libloading v0.8.9
+    Checking zstd-safe v8.2.0
+    Checking tracing-core v0.1.36
+    Checking blake3 v1.5.4
+    Checking zstd v0.14.3
+warning: `swc_native_addon` (build script) generated 1 warning
+    Checking tracing v0.1.44
+    Checking generic-array v0.14.7
+    Checking errno v0.3.14
+    Checking cpufeatures v0.2.13
+    Checking rustix v0.38.44
+    Checking block-buffer v0.10.4
+    Checking crypto-common v0.1.6
+    Checking digest v0.10.7
+    Checking sha2 v0.10.9
+    Checking xattr v1.3.1
+    Checking tempfile v3.12.0
+warning: `swc_native_addon` (lib test) generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (lib) generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "cleanup_policy") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "windows_cache") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "ntfs") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "cleanup") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "linux_user_namespace") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "platform") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "format") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "integrity") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (lib) generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (test "cache") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (example "compare_decoding") generated 1 warning (1 duplicate)
+warning: `swc_native_addon` (example "compare_compression") generated 1 warning (1 duplicate)
+    Finished `release` profile [optimized] target(s) in 3.79s
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /Users/jdalton/projects/swc-native-speed-pass/bindings/binding_es_ast_viewer/Cargo.toml
+workspace: /Users/jdalton/projects/swc-native-speed-pass/Cargo.toml
+warning: profile package spec `icu_locid` in profile `release` did not match any packages
+warning: profile package spec `icu_locid_transform` in profile `release` did not match any packages
+   Compiling cfg-if v1.0.4
+   Compiling bitflags v2.10.0
+   Compiling once_cell v1.21.3
+   Compiling constant_time_eq v0.3.1
+   Compiling pin-project-lite v0.2.14
+   Compiling libc v0.2.189
+   Compiling typenum v1.17.0
+   Compiling arrayref v0.3.8
+   Compiling zstd-sys v2.1.2+zstd.1.5.7
+   Compiling fastrand v2.1.1
+   Compiling arrayvec v0.7.8
+   Compiling libloading v0.8.9
+   Compiling zstd-safe v8.2.0
+   Compiling blake3 v1.5.4
+   Compiling zstd v0.14.3
+   Compiling tracing-core v0.1.36
+   Compiling tracing v0.1.44
+   Compiling generic-array v0.14.7
+   Compiling errno v0.3.14
+   Compiling cpufeatures v0.2.13
+   Compiling crypto-common v0.1.6
+   Compiling block-buffer v0.10.4
+   Compiling rustix v0.38.44
+   Compiling digest v0.10.7
+   Compiling sha2 v0.10.9
+   Compiling xattr v1.3.1
+   Compiling tempfile v3.12.0
+   Compiling swc_native_addon v0.1.0 (/Users/jdalton/projects/swc-native-speed-pass/crates/swc_native_addon)
+    Finished `release` profile [optimized] target(s) in 8.83s
+changed=true compressed_bytes=7698372 pack_seconds=16.402 decode_ms=149.954
+changed=true compressed_bytes=11133902 pack_seconds=26.494 decode_ms=258.483

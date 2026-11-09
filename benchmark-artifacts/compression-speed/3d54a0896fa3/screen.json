@@ -1,0 +1,32 @@
+[
+  {
+    "input": "SWC",
+    "trial": 0,
+    "variant": "search4",
+    "bytes": 7715036,
+    "pack_seconds": 26.288615,
+    "cpu_seconds": 9.89,
+    "peak_process_bytes": 383188992,
+    "frame_sha256": "d15410e9e42b66df5d4fcaf33cba1420d19da74e8f5a0a138ca635d9f022d3ad"
+  },
+  {
+    "input": "SWC",
+    "trial": 0,
+    "variant": "min4",
+    "bytes": 7984298,
+    "pack_seconds": 19.793903,
+    "cpu_seconds": 9.63,
+    "peak_process_bytes": 382894080,
+    "frame_sha256": "f4bdbc1e4472f13785189b24294b9fca8fdb68a674d556fc65a38de422af1bbd"
+  },
+  {
+    "input": "SWC",
+    "trial": 0,
+    "variant": "target64",
+    "bytes": 7706952,
+    "pack_seconds": 18.816515,
+    "cpu_seconds": 9.12,
+    "peak_process_bytes": 383188992,
+    "frame_sha256": "7712e0af5f3dfaad31b675e842081adfe8b48957a98155418651e3ce7c400c6a"
+  }
+]

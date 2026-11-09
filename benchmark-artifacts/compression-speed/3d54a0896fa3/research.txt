@@ -1,0 +1,15 @@
+Compression speed pass: hypotheses and outcome
+
+Priority: payload size, verified decompression latency, memory, compression time.
+
+Research: zstd 1.5.7 zstd.h documents chainLog as the multi-probe table size (1 << (chainLog+2) bytes) and searchLog as log2 search attempts. zstd_opt.c uses chainLog-1 for the binary tree history and stops searching beyond it. A 3-second sample of the compact SWC process placed 231/272 top-of-stack samples in ZSTD_btGetAllMatches_noDict_3. This sampling locates a hot path; it is not a performance measurement.
+
+Plan: screen bounded tree memory, fewer search attempts, longer minimum matches, and earlier match cutoffs. Stop candidates that increase bytes. Then test slightly deeper search to favor size, and compare resulting frames on the unchanged decoder.
+
+Compact ChainLog25 increases SWC by417 bytes. SearchLog4 increases it by16,531; MinMatch4 by285,793; TargetLength64 by8,447. These settings were rejected despite possible CPU/memory savings. Compact repeats were stopped after two completed pairs; other rejects have one completed SWC run. All completed frames passed exact decoded-byte equality. Rspack trials for already-rejected candidates were intentionally not completed.
+
+SearchLog8 preserves HashLog23, the existing chain table, strategy, LDM and bounded window. It reduces SWC by133 bytes and Rspack by483 bytes. One screen per input records whole-process CPU and peak RSS; these are not proof of speed/memory improvements. Production validation independently checks size and full-byte roundtrip. The one-line implementation changes SearchLog7 to8 only; no new compression-speed claim is made.
+
+Decoding comparison uses five alternating fresh-process pairs per input on the unchanged 64KiB decoder, twelve timed verified writes per process after two warmups. See frame-benchmark files for exact method. SWC median-process CPU63.0405→61.8925ms and wall109.7025→101.297ms. Rspack CPU91.9375→93.486ms and wall160.673→179.7535ms (slower3/5 paired processes). Mixed latency observations are disclosed; no decoder speed improvement is claimed. Size-first selection trades a very small additional reduction against that uncertain latency cost.
+
+Reproduction: cargo build --release --bin tune; use input versions/hashes enforced by screen.py and search8.py. /usr/bin/time -lp is macOS-specific. Run screen.py for the three size-increasing search variants; search8.py for the chosen variant. repeat.py reproduces compact versus selected (the recorded run was stopped after four completed observations). Commands write compressed frames beside the public inputs, so use a scratch directory.

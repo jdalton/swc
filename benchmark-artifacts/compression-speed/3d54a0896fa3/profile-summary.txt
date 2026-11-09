@@ -1,0 +1,1 @@
+macOS sample, 3 seconds at 10 ms intervals, ChainLog25 compact SWC process. 272 thread samples: 231 top-of-stack ZSTD_btGetAllMatches_noDict_3; 22 ZSTD_compressBlock_opt2; 17 ZSTD_ldm_generateSequences. Wall sampling locates hotspots; it does not establish CPU speedup. This sampled run is trial0 compact in results.json and is not used to claim performance.

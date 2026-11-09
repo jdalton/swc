@@ -1,0 +1,114 @@
+{
+  "SWC": {
+    "selected": {
+      "process_medians": [
+        {
+          "wall_ms": 114.7115,
+          "cpu_ms": 63.0835
+        },
+        {
+          "wall_ms": 104.435,
+          "cpu_ms": 63.040499999999994
+        },
+        {
+          "wall_ms": 109.7025,
+          "cpu_ms": 63.1475
+        },
+        {
+          "wall_ms": 116.355,
+          "cpu_ms": 62.166
+        },
+        {
+          "wall_ms": 98.661,
+          "cpu_ms": 62.427499999999995
+        }
+      ],
+      "wall_ms": 109.7025,
+      "cpu_ms": 63.040499999999994,
+      "peak_process_bytes": 71008256
+    },
+    "search8": {
+      "process_medians": [
+        {
+          "wall_ms": 101.297,
+          "cpu_ms": 63.323499999999996
+        },
+        {
+          "wall_ms": 107.664,
+          "cpu_ms": 61.8925
+        },
+        {
+          "wall_ms": 100.4075,
+          "cpu_ms": 61.203
+        },
+        {
+          "wall_ms": 98.184,
+          "cpu_ms": 62.6435
+        },
+        {
+          "wall_ms": 114.131,
+          "cpu_ms": 59.1315
+        }
+      ],
+      "wall_ms": 101.297,
+      "cpu_ms": 61.8925,
+      "peak_process_bytes": 71024640
+    }
+  },
+  "Rspack": {
+    "selected": {
+      "process_medians": [
+        {
+          "wall_ms": 160.673,
+          "cpu_ms": 91.917
+        },
+        {
+          "wall_ms": 187.8025,
+          "cpu_ms": 92.29599999999999
+        },
+        {
+          "wall_ms": 167.78199999999998,
+          "cpu_ms": 93.34
+        },
+        {
+          "wall_ms": 158.472,
+          "cpu_ms": 91.9375
+        },
+        {
+          "wall_ms": 147.6415,
+          "cpu_ms": 90.1645
+        }
+      ],
+      "wall_ms": 160.673,
+      "cpu_ms": 91.9375,
+      "peak_process_bytes": 105857024
+    },
+    "search8": {
+      "process_medians": [
+        {
+          "wall_ms": 182.45,
+          "cpu_ms": 95.7015
+        },
+        {
+          "wall_ms": 179.7535,
+          "cpu_ms": 91.556
+        },
+        {
+          "wall_ms": 162.168,
+          "cpu_ms": 89.8475
+        },
+        {
+          "wall_ms": 186.5145,
+          "cpu_ms": 93.48599999999999
+        },
+        {
+          "wall_ms": 153.6925,
+          "cpu_ms": 93.89150000000001
+        }
+      ],
+      "wall_ms": 179.7535,
+      "cpu_ms": 93.48599999999999,
+      "peak_process_bytes": 105857024
+    }
+  }
+}

@@ -1,0 +1,126 @@
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /Users/jdalton/projects/swc-native-speed-pass/bindings/binding_es_ast_viewer/Cargo.toml
+workspace: /Users/jdalton/projects/swc-native-speed-pass/Cargo.toml
+warning: profile package spec `icu_locid` in profile `release` did not match any packages
+warning: profile package spec `icu_locid_transform` in profile `release` did not match any packages
+   Compiling libc v0.2.189
+   Compiling shlex v1.3.0
+   Compiling find-msvc-tools v0.1.5
+   Compiling typenum v1.17.0
+   Compiling version_check v0.9.5
+   Compiling pkg-config v0.3.29
+   Compiling cfg-if v1.0.4
+   Compiling rustix v0.38.44
+   Compiling bitflags v2.10.0
+   Compiling once_cell v1.21.3
+   Compiling zstd-safe v8.2.0
+   Compiling tracing-core v0.1.36
+   Compiling arrayvec v0.7.8
+   Compiling generic-array v0.14.7
+   Compiling fastrand v2.1.1
+   Compiling pin-project-lite v0.2.14
+   Compiling arrayref v0.3.8
+   Compiling constant_time_eq v0.3.1
+   Compiling libloading v0.8.9
+   Compiling tracing v0.1.44
+   Compiling jobserver v0.1.35
+   Compiling cc v1.2.46
+   Compiling swc_native_addon v0.1.0 (/Users/jdalton/projects/swc-native-speed-pass/crates/swc_native_addon)
+   Compiling errno v0.3.14
+   Compiling cpufeatures v0.2.13
+   Compiling crypto-common v0.1.6
+   Compiling block-buffer v0.10.4
+   Compiling digest v0.10.7
+   Compiling sha2 v0.10.9
+   Compiling zstd-sys v2.1.2+zstd.1.5.7
+   Compiling blake3 v1.5.4
+   Compiling tempfile v3.12.0
+   Compiling xattr v1.3.1
+   Compiling zstd v0.14.3
+    Finished `release` profile [optimized] target(s) in 32.68s
+     Running unittests src/lib.rs (/tmp/swc-speed-pass-target/release/deps/swc_native_addon-33b822ff063d7041)
+
+running 3 tests
+test platform::unix::macos_tests::recognizes_noexec_mount_flags ... ok
+test replacement::supported::tests::finds_embedded_header_across_read_boundaries ... ok
+test replacement::supported::tests::rejects_carrier_without_embedded_header ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cache.rs (/tmp/swc-speed-pass-target/release/deps/cache-298d0d1ad5670a7c)
+
+running 19 tests
+test cache_root_ignores_permissive_umask_worker ... ok
+test cache_security::strict_root_worker ... ok
+test cache_security::materialization_worker ... ok
+test cache_security::opt_out_root_worker ... ok
+test cache_worker ... ok
+test cache_configuration_is_explicit ... ok
+test custom_root_without_default_cache_worker ... ok
+test cache_root_ignores_permissive_umask ... FAILED
+test unix_cache_fallback::unix_cache_worker ... ok
+test cache_security::unsafe_roots_require_an_exact_security_opt_out ... ok
+test rejects_symlinks_hardlinks_and_unsafe_directories ... FAILED
+test verifies_hits_and_recovers_corruption ... FAILED
+test custom_root_does_not_require_default_cache ... ok
+test persistent_cache_keeps_at_most_three_inactive_images ... FAILED
+test custom_root_failure_falls_back_to_default ... ok
+test concurrent_processes_publish_only_complete_files ... FAILED
+test cache_security::security_opt_out_preserves_cache_modes_and_entry_validation ... ok
+test temporary_files_are_unique_and_removed_after_loading ... ok
+test unix_cache_fallback::unix_cache_fixtures ... ok
+
+failures:
+
+---- cache_root_ignores_permissive_umask stdout ----
+
+thread 'cache_root_ignores_permissive_umask' (32456450) panicked at crates/swc_native_addon/tests/cache.rs:171:5:
+cache root worker failed: 
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- rejects_symlinks_hardlinks_and_unsafe_directories stdout ----
+
+thread 'rejects_symlinks_hardlinks_and_unsafe_directories' (32456465) panicked at crates/swc_native_addon/tests/cache.rs:233:57:
+called `Result::unwrap()` on an `Err` value: Error { kind: Cache, message: "validate cache root /var/folders/1z/r51507dd7x5fbt7fkjvgmt100000gn/T/.tmpJHRiTa: cache root contains a non-directory or symlink" }
+
+---- verifies_hits_and_recovers_corruption stdout ----
+
+thread 'verifies_hits_and_recovers_corruption' (32456483) panicked at crates/swc_native_addon/tests/cache.rs:43:57:
+called `Result::unwrap()` on an `Err` value: Error { kind: Cache, message: "validate cache root /var/folders/1z/r51507dd7x5fbt7fkjvgmt100000gn/T/.tmpgPLseP: cache root contains a non-directory or symlink" }
+
+---- persistent_cache_keeps_at_most_three_inactive_images stdout ----
+
+thread 'persistent_cache_keeps_at_most_three_inactive_images' (32456463) panicked at crates/swc_native_addon/tests/cache.rs:78:65:
+called `Result::unwrap()` on an `Err` value: Error { kind: Cache, message: "validate cache root /var/folders/1z/r51507dd7x5fbt7fkjvgmt100000gn/T/.tmpBLv2B3: cache root contains a non-directory or symlink" }
+
+---- concurrent_processes_publish_only_complete_files stdout ----
+
+thread 'concurrent_processes_publish_only_complete_files' (32456458) panicked at crates/swc_native_addon/tests/cache.rs:273:9:
+cache worker failed: 
+running 1 test
+test cache_worker ... FAILED
+
+failures:
+
+failures:
+    cache_worker
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 18 filtered out; finished in 0.00s
+
+
+thread 'cache_worker' (32456827) panicked at crates/swc_native_addon/tests/cache.rs:304:77:
+called `Result::unwrap()` on an `Err` value: Error { kind: Cache, message: "validate cache root /var/folders/1z/r51507dd7x5fbt7fkjvgmt100000gn/T/.tmpE8atTi/cache: cache root contains a non-directory or symlink" }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+
+failures:
+    cache_root_ignores_permissive_umask
+    concurrent_processes_publish_only_complete_files
+    persistent_cache_keeps_at_most_three_inactive_images
+    rejects_symlinks_hardlinks_and_unsafe_directories
+    verifies_hits_and_recovers_corruption
+
+test result: FAILED. 14 passed; 5 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.40s
+
+error: test failed, to rerun pass `-p swc_native_addon --test cache`
