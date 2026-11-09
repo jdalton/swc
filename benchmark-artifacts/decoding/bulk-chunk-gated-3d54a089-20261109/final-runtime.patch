@@ -1,0 +1,54 @@
+diff --git a/crates/swc_native_addon/src/format.rs b/crates/swc_native_addon/src/format.rs
+index c0e2f952f..0a1bcfd42 100644
+--- a/crates/swc_native_addon/src/format.rs
++++ b/crates/swc_native_addon/src/format.rs
+@@ -307,7 +307,7 @@ impl<'a> Payload<'a> {
+     pub fn decode_into(&self, output: &mut (impl Read + Write + Seek)) -> Result<()> {
+         let mut hash = self.verifier()?;
+         let window_log = (64 - self.header.raw_len.saturating_sub(1).leading_zeros()).max(10);
+-        if self.compressed[4] & 0x20 == 0 {
++        let window_size = if self.compressed[4] & 0x20 == 0 {
+             let descriptor = self.compressed[5];
+             let base = 1_u64 << (10 + (descriptor >> 3));
+             let window = base + (base / 8) * u64::from(descriptor & 7);
+@@ -317,6 +317,40 @@ impl<'a> Payload<'a> {
+                     "zstd window exceeds the bounded raw size",
+                 ));
+             }
++            window
++        } else {
++            self.header.raw_len
++        };
++        // When the frame already needs a full-image history window, let zstd
++        // use the output buffer as that history and avoid copying each block.
++        // Cap the allocation at 64 MiB; larger images and legacy small-window
++        // frames retain streaming instead of allocating their complete output.
++        if self.header.raw_len <= 64 * 1024 * 1024 && window_size >= self.header.raw_len {
++            let mut decoder = zstd::bulk::Decompressor::new()
++                .map_err(|e| Error::io(ErrorKind::Compression, "initialize zstd decoder", e))?;
++            decoder
++                .set_parameter(zstd::zstd_safe::DParameter::WindowLogMax(window_log))
++                .map_err(|e| Error::io(ErrorKind::Compression, "limit zstd window", e))?;
++            let buffer = decoder
++                .decompress(self.compressed, self.header.raw_len as usize)
++                .map_err(|e| Error::io(ErrorKind::Compression, "decompress native addon", e))?;
++            if buffer.len() as u64 != self.header.raw_len {
++                return Err(Error::new(
++                    ErrorKind::Integrity,
++                    "decoded addon length mismatch",
++                ));
++            }
++            // Keep the streaming path's hash/write granularity while avoiding
++            // a second full-size zstd history allocation and block copies.
++            for chunk in buffer.chunks(hash.buffer_len(self.header.raw_len)) {
++                hash.update(chunk);
++                output
++                    .write_all(chunk)
++                    .map_err(|e| Error::io(ErrorKind::Cache, "write decoded addon", e))?;
++            }
++            hash.finish()?;
++            native_kind(output, self.header.raw_len)?;
++            return Ok(());
+         }
+         let mut decoder = zstd::stream::read::Decoder::with_buffer(self.compressed)
+             .map_err(|e| Error::io(ErrorKind::Compression, "initialize zstd decoder", e))?
