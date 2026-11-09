@@ -1,0 +1,25 @@
+{
+  "cpu": "Apple M1 Max",
+  "os": "macOS 27.2",
+  "arch": "arm64",
+  "zstd_crate": "0.14.3",
+  "zstd": "1.5.7",
+  "implementation_commit": "2ccb29d1a290658d58d35536f945f991324df93c",
+  "control": {
+    "level": 22,
+    "long_distance_matching": true,
+    "window": "ceil(log2(input size)), capped at 26"
+  },
+  "candidate": {
+    "same_as_control": true,
+    "hash_log": 23,
+    "search_log": 7
+  },
+  "method": "3 fresh processes per variant/input in alternating order; CPU time and peak RSS from /usr/bin/time -lp; compressed frames decode to exactly the raw bytes",
+  "memory_scope": "Complete compression plus round-trip verification process, with compressor context retained during verification. This is not runtime memory or a direct production-packer RSS measurement.",
+  "actual_packer_validation": {
+    "SWC": 7698505,
+    "Rspack": 11134385
+  },
+  "limitations": "Two Darwin ARM64 inputs. No clear CPU-speedup claim. Versus the untuned level-22 control, SWC is 143 bytes smaller and Rspack is 380 bytes larger."
+}
