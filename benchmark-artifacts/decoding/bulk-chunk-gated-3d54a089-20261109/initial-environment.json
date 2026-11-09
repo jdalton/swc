@@ -1,0 +1,17 @@
+{
+  "base": "3d54a0896fa3ba5c4af023c3c259db277cca99ac",
+  "phase": "initial ungated prototype, same eligible path on measured current frames",
+  "warmup_rounds": 2,
+  "measured_rounds": 12,
+  "process_pairs": 5,
+  "variants": {
+    "before": {
+      "bytes": 452064,
+      "sha256": "8b919d0188c591a57bb7d594231c83412dae53f6d03f82129c5c664a14f24aa6"
+    },
+    "prototype": {
+      "bytes": 452064,
+      "sha256": "2818f89390252281fc9735af6f4f6cb69618cc205cfa1d2fa119ae23aeb49e48"
+    }
+  }
+}
