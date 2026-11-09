@@ -1,0 +1,11 @@
+[package]
+name = "swc-compression-bench"
+version = "0.0.0"
+edition = "2021"
+[dependencies]
+zstd = "=0.14.3"
+blake3 = "=1.5.4"
+
+[[bin]]
+name = "tune"
+path = "tune.rs"
