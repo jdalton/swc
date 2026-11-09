@@ -1,0 +1,23 @@
+{
+  "platform": "Darwin ARM64",
+  "metric": "zstd payload bytes (excludes carrier header)",
+  "baseline_level": 16,
+  "candidate_level": 19,
+  "candidate_long_distance_matching": true,
+  "results": [
+    {
+      "name": "SWC",
+      "version": "1.16.2",
+      "raw_bytes": 26612480,
+      "before": 8446098,
+      "after": 7714807
+    },
+    {
+      "name": "Rspack",
+      "version": "1.7.0",
+      "raw_bytes": 40506208,
+      "before": 12406049,
+      "after": 11182486
+    }
+  ]
+}
