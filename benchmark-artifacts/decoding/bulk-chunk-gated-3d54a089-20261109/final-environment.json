@@ -1,0 +1,18 @@
+{
+  "base": "3d54a0896fa3ba5c4af023c3c259db277cca99ac",
+  "phase": "final gated candidate, reversed process order",
+  "warmup_rounds": 2,
+  "measured_rounds": 12,
+  "process_pairs": 5,
+  "variants": {
+    "before": {
+      "bytes": 452064,
+      "sha256": "8b919d0188c591a57bb7d594231c83412dae53f6d03f82129c5c664a14f24aa6"
+    },
+    "after": {
+      "bytes": 452064,
+      "sha256": "65614e4b5956890105c92d4b46fc36f9dc62f4404a3b266b1eab653a946e6a7a"
+    }
+  },
+  "compiler": "rustc 1.96.0-nightly (f5eca4fcf 2026-04-09)\nbinary: rustc\ncommit-hash: f5eca4fcfa908d1e038afd19c6e746f075859130\ncommit-date: 2026-04-09\nhost: aarch64-apple-darwin\nrelease: 1.96.0-nightly\nLLVM version: 22.1.2\n"
+}
