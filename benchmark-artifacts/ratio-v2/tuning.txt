@@ -1,0 +1,6 @@
+level=16 ldm=false bytes=8446098 pack_s=23.743 decode_ms=186.968
+level=16 ldm=true bytes=8326319 pack_s=22.498 decode_ms=93.029
+level=18 ldm=true bytes=7759736 pack_s=20.766 decode_ms=73.847
+level=19 ldm=true bytes=7714807 pack_s=22.589 decode_ms=51.011
+level=19 ldm=false bytes=7763913 pack_s=18.562 decode_ms=83.861
+level=20 ldm=true bytes=7699181 pack_s=25.785 decode_ms=45.749
