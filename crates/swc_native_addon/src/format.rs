@@ -369,7 +369,23 @@ pub fn pack(raw: &[u8], target: NativeTarget) -> Result<Vec<u8>> {
         ));
     }
     native_target(&mut Cursor::new(raw), raw.len() as u64, target)?;
-    let compressed = zstd::bulk::compress(raw, COMPRESSION_LEVEL)
+    let mut compressor = zstd::bulk::Compressor::new(COMPRESSION_LEVEL)
+        .map_err(|e| Error::io(ErrorKind::Compression, "initialize native compressor", e))?;
+    // Large native images can repeat code and data beyond zstd's default
+    // search window. Cap it at 64 MiB and the decoder's existing size bound.
+    if raw.len() >= 8 * 1024 * 1024 {
+        let window_log = (64 - (raw.len() as u64).saturating_sub(1).leading_zeros()).clamp(10, 26);
+        compressor
+            .set_parameter(zstd::zstd_safe::CParameter::EnableLongDistanceMatching(
+                true,
+            ))
+            .and_then(|()| {
+                compressor.set_parameter(zstd::zstd_safe::CParameter::WindowLog(window_log))
+            })
+            .map_err(|e| Error::io(ErrorKind::Compression, "configure native compression", e))?;
+    }
+    let compressed = compressor
+        .compress(raw)
         .map_err(|e| Error::io(ErrorKind::Compression, "compress native addon", e))?;
     if compressed.len() as u64 > MAX_SIZE {
         return Err(Error::new(

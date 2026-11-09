@@ -211,3 +211,18 @@ fn rejects_decoder_size_and_window_abuse() {
         ErrorKind::Compression
     );
 }
+
+#[test]
+fn large_payload_respects_decoder_window_and_integrity() {
+    let fixture = fs::read(support::fixture()).unwrap();
+    for size in [8 * 1024 * 1024 - 1, 8 * 1024 * 1024, 8 * 1024 * 1024 + 1] {
+        let mut raw = fixture.clone();
+        raw.resize(size, 0);
+        let bytes = pack(&raw, target()).unwrap();
+        let payload = Payload::parse(&bytes).unwrap();
+        let mut decoded = Cursor::new(Vec::new());
+        payload.decode_into(&mut decoded).unwrap();
+        assert_eq!(decoded.get_ref(), &raw);
+        payload.header.verify(&mut decoded).unwrap();
+    }
+}
