@@ -1,0 +1,493 @@
+{
+  "environment": "Linux 4bb09c272915 7.2.12-orbstack-00394-gbecdd6130068 #1 SMP PREEMPT Thu Oct 22 22:17:17 UTC 2026 aarch64 GNU/Linux",
+  "node": "v18.20.4",
+  "input": {
+    "package": "@swc/core-linux-arm64-gnu",
+    "version": "1.16.2",
+    "bytes": 33313448,
+    "sha256": "c8c3f9ffdf3087bb8b6d032c63d30e25ff55305127e3de68d01dd11270fe960f",
+    "source": "https://registry.npmjs.org/@swc/core-linux-arm64-gnu/-/core-linux-arm64-gnu-1.16.2.tgz"
+  },
+  "results": [
+    {
+      "trial": 0,
+      "codec": "zlib",
+      "compress_ms": 139.793098,
+      "read_ms": [
+        100.915557,
+        119.74097,
+        112.191188,
+        116.209205,
+        93.401358,
+        118.46309,
+        112.161979
+      ],
+      "require_ms": [
+        63.832189,
+        65.575697,
+        72.252309,
+        69.281671,
+        61.926764,
+        90.435678,
+        99.414258
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       42%     14188544     33316864     33316864    \nzlib        42%     14188544     33316864     33316864    \n"
+    },
+    {
+      "trial": 0,
+      "codec": "zstd",
+      "compress_ms": 129.772804,
+      "read_ms": [
+        53.268061,
+        29.609085,
+        40.218964,
+        26.730989,
+        43.76027,
+        32.427681,
+        49.045585
+      ],
+      "require_ms": [
+        30.118253,
+        37.563911,
+        29.51946,
+        24.657772,
+        27.255366,
+        35.969571,
+        43.704145
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       41%     13983744     33316864     33316864    \nzstd        41%     13983744     33316864     33316864    \n"
+    },
+    {
+      "trial": 1,
+      "codec": "zstd",
+      "compress_ms": 64.047023,
+      "read_ms": [
+        35.454526,
+        43.254727,
+        46.403366,
+        37.081533,
+        40.659299,
+        50.767759,
+        39.027583
+      ],
+      "require_ms": [
+        25.809235,
+        24.875314,
+        29.447918,
+        23.415017,
+        44.261189,
+        23.401642,
+        24.204812
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       41%     13983744     33316864     33316864    \nzstd        41%     13983744     33316864     33316864    \n"
+    },
+    {
+      "trial": 1,
+      "codec": "zlib",
+      "compress_ms": 354.699391,
+      "read_ms": [
+        108.872924,
+        124.725575,
+        173.736826,
+        149.572097,
+        117.042126,
+        176.975507,
+        202.35499
+      ],
+      "require_ms": [
+        108.840007,
+        115.286701,
+        111.550143,
+        90.192761,
+        66.407326,
+        106.843124,
+        108.85834
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       42%     14188544     33316864     33316864    \nzlib        42%     14188544     33316864     33316864    \n"
+    },
+    {
+      "trial": 2,
+      "codec": "zlib",
+      "compress_ms": 175.936378,
+      "read_ms": [
+        136.650875,
+        136.038248,
+        146.875712,
+        87.331081,
+        110.691265,
+        92.587812,
+        97.898543
+      ],
+      "require_ms": [
+        88.954922,
+        69.001462,
+        60.902385,
+        42.478765,
+        76.518285,
+        68.41621,
+        76.664786
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       42%     14188544     33316864     33316864    \nzlib        42%     14188544     33316864     33316864    \n"
+    },
+    {
+      "trial": 2,
+      "codec": "zstd",
+      "compress_ms": 144.684702,
+      "read_ms": [
+        38.656832,
+        46.070405,
+        29.765085,
+        30.406255,
+        37.880745,
+        33.844812,
+        34.713899
+      ],
+      "require_ms": [
+        26.494155,
+        35.56386,
+        18.966289,
+        19.427958,
+        23.577934,
+        30.872841,
+        22.877723
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       41%     13983744     33316864     33316864    \nzstd        41%     13983744     33316864     33316864    \n"
+    },
+    {
+      "trial": 3,
+      "codec": "zstd",
+      "compress_ms": 146.739127,
+      "read_ms": [
+        36.57474,
+        30.132754,
+        39.699544,
+        38.49404,
+        36.922075,
+        27.364158,
+        41.544803
+      ],
+      "require_ms": [
+        28.812623,
+        26.349863,
+        25.465442,
+        21.079298,
+        27.763952,
+        22.870348,
+        25.020065
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       41%     13983744     33316864     33316864    \nzstd        41%     13983744     33316864     33316864    \n"
+    },
+    {
+      "trial": 3,
+      "codec": "zlib",
+      "compress_ms": 370.74396,
+      "read_ms": [
+        92.243644,
+        107.626043,
+        138.715218,
+        119.733596,
+        77.105413,
+        87.424957,
+        89.219798
+      ],
+      "require_ms": [
+        51.654138,
+        57.518746,
+        62.807852,
+        79.131546,
+        73.561148,
+        53.935189,
+        65.94399
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       42%     14188544     33316864     33316864    \nzlib        42%     14188544     33316864     33316864    \n"
+    },
+    {
+      "trial": 4,
+      "codec": "zlib",
+      "compress_ms": 193.521619,
+      "read_ms": [
+        103.221608,
+        92.883231,
+        102.397104,
+        97.407958,
+        102.844273,
+        95.396824,
+        96.515371
+      ],
+      "require_ms": [
+        94.484904,
+        63.38048,
+        54.683567,
+        81.564182,
+        62.572225,
+        66.086449,
+        44.9179
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       42%     14188544     33316864     33316864    \nzlib        42%     14188544     33316864     33316864    \n"
+    },
+    {
+      "trial": 4,
+      "codec": "zstd",
+      "compress_ms": 113.559277,
+      "read_ms": [
+        32.303763,
+        42.507599,
+        38.10433,
+        30.401088,
+        36.830866,
+        39.410794,
+        28.899665
+      ],
+      "require_ms": [
+        24.682689,
+        22.336638,
+        22.575805,
+        26.037278,
+        20.930923,
+        22.713306,
+        20.288295
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       41%     13983744     33316864     33316864    \nzstd        41%     13983744     33316864     33316864    \n"
+    },
+    {
+      "trial": 5,
+      "codec": "zstd",
+      "compress_ms": 153.81695,
+      "read_ms": [
+        37.548327,
+        37.723412,
+        39.403252,
+        34.75894,
+        42.551557,
+        36.807949,
+        37.266326
+      ],
+      "require_ms": [
+        34.987816,
+        25.79361,
+        19.214832,
+        44.890525,
+        22.389137,
+        39.539378,
+        21.666426
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       41%     13983744     33316864     33316864    \nzstd        41%     13983744     33316864     33316864    \n"
+    },
+    {
+      "trial": 5,
+      "codec": "zlib",
+      "compress_ms": 197.657386,
+      "read_ms": [
+        110.544431,
+        95.057198,
+        96.251995,
+        104.019487,
+        99.034715,
+        93.173107,
+        97.279583
+      ],
+      "require_ms": [
+        86.699495,
+        90.723305,
+        63.214645,
+        38.168788,
+        89.041714,
+        70.088716,
+        85.844158
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       42%     14188544     33316864     33316864    \nzlib        42%     14188544     33316864     33316864    \n"
+    },
+    {
+      "trial": 6,
+      "codec": "zlib",
+      "compress_ms": 268.940733,
+      "read_ms": [
+        119.170009,
+        118.069963,
+        103.729152,
+        112.180188,
+        119.270927,
+        104.768615,
+        148.181675
+      ],
+      "require_ms": [
+        77.382289,
+        62.209141,
+        89.48234,
+        98.242003,
+        63.303479,
+        74.132901,
+        95.918577
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       42%     14188544     33316864     33316864    \nzlib        42%     14188544     33316864     33316864    \n"
+    },
+    {
+      "trial": 6,
+      "codec": "zstd",
+      "compress_ms": 138.90426,
+      "read_ms": [
+        44.639815,
+        46.972826,
+        43.628895,
+        34.279188,
+        39.254168,
+        34.597981,
+        42.508348
+      ],
+      "require_ms": [
+        22.622138,
+        33.302434,
+        24.609647,
+        51.399428,
+        29.762711,
+        33.827728,
+        29.959503
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       41%     13983744     33316864     33316864    \nzstd        41%     13983744     33316864     33316864    \n"
+    },
+    {
+      "trial": 7,
+      "codec": "zstd",
+      "compress_ms": 124.686199,
+      "read_ms": [
+        39.74292,
+        44.124272,
+        37.434369,
+        27.732369,
+        46.211281,
+        53.486062,
+        53.296603
+      ],
+      "require_ms": [
+        29.114125,
+        32.180513,
+        30.289713,
+        33.670436,
+        29.60546,
+        21.687218,
+        23.04639
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       41%     13983744     33316864     33316864    \nzstd        41%     13983744     33316864     33316864    \n"
+    },
+    {
+      "trial": 7,
+      "codec": "zlib",
+      "compress_ms": 427.456952,
+      "read_ms": [
+        112.053438,
+        93.668609,
+        85.934201,
+        113.304693,
+        102.024936,
+        114.450822,
+        101.899727
+      ],
+      "require_ms": [
+        79.959216,
+        73.960775,
+        76.318576,
+        81.565932,
+        73.768523,
+        87.657291,
+        109.214092
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       42%     14188544     33316864     33316864    \nzlib        42%     14188544     33316864     33316864    \n"
+    },
+    {
+      "trial": 8,
+      "codec": "zlib",
+      "compress_ms": 278.071563,
+      "read_ms": [
+        96.383162,
+        147.497964,
+        121.382227,
+        124.969659,
+        156.705462,
+        151.008854,
+        142.836694
+      ],
+      "require_ms": [
+        86.366785,
+        63.685064,
+        90.723055,
+        67.364246,
+        113.492152,
+        74.973779,
+        71.259888
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       42%     14188544     33316864     33316864    \nzlib        42%     14188544     33316864     33316864    \n"
+    },
+    {
+      "trial": 8,
+      "codec": "zstd",
+      "compress_ms": 126.23954,
+      "read_ms": [
+        35.106942,
+        43.855146,
+        27.275158,
+        41.693678,
+        53.608312,
+        44.354898,
+        38.305997
+      ],
+      "require_ms": [
+        26.698281,
+        32.77689,
+        17.041406,
+        21.556175,
+        43.49102,
+        40.748341,
+        28.727456
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       41%     13983744     33316864     33316864    \nzstd        41%     13983744     33316864     33316864    \n"
+    },
+    {
+      "trial": 9,
+      "codec": "zstd",
+      "compress_ms": 354.759517,
+      "read_ms": [
+        49.062293,
+        34.03352,
+        42.947892,
+        36.649657,
+        34.757607,
+        41.082842,
+        42.345014
+      ],
+      "require_ms": [
+        24.342937,
+        27.037407,
+        22.314221,
+        31.389259,
+        29.466376,
+        34.961025,
+        31.238342
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       41%     13983744     33316864     33316864    \nzstd        41%     13983744     33316864     33316864    \n"
+    },
+    {
+      "trial": 9,
+      "codec": "zlib",
+      "compress_ms": 445.869906,
+      "read_ms": [
+        107.531168,
+        88.13321,
+        115.153534,
+        112.292355,
+        161.332356,
+        131.786772,
+        84.825862
+      ],
+      "require_ms": [
+        85.191281,
+        64.650902,
+        95.772534,
+        54.006397,
+        94.09586,
+        96.195036,
+        65.40603
+      ],
+      "compsize": "Processed 1 file, 255 regular extents (255 refs), 0 inline.\nType       Perc     Disk Usage   Uncompressed Referenced  \nTOTAL       42%     14188544     33316864     33316864    \nzlib        42%     14188544     33316864     33316864    \n"
+    }
+  ]
+}
